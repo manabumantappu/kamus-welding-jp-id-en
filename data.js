@@ -307,6 +307,256 @@ const data = [
 {jp:"作業時間",romaji:"sagyou jikan",id:"waktu kerja",en:"working time",cat:"Process"},
 {jp:"標準時間",romaji:"hyoujun jikan",id:"waktu standar",en:"standard time",cat:"Process"},
 {jp:"進捗",romaji:"shinchoku",id:"kemajuan kerja",en:"progress",cat:"Process"},
-{jp:"完了報告",romaji:"kanryou houkoku",id:"laporan selesai",en:"completion report",cat:"Process"}
+{jp:"完了報告",romaji:"kanryou houkoku",id:"laporan selesai",en:"completion report",cat:"Process"},
+
+/* =================================================
+   TAMBAHAN 100 KOSAKATA BARU (ANTI DUPLIKAT)
+================================================= */
+
+/* ===== Welding ===== */
+{jp:"溶接長さ",romaji:"yousetsu nagasa",id:"panjang las",en:"weld length",cat:"Welding"},
+{jp:"溶接幅",romaji:"yousetsu haba",id:"lebar las",en:"weld width",cat:"Welding"},
+{jp:"溶接深さ",romaji:"yousetsu fukasa",id:"kedalaman las",en:"weld depth",cat:"Welding"},
+{jp:"溶接開始点",romaji:"yousetsu kaishiten",id:"titik mulai las",en:"weld start point",cat:"Welding"},
+{jp:"溶接終了点",romaji:"yousetsu shuuryouten",id:"titik akhir las",en:"weld end point",cat:"Welding"},
+{jp:"溶接記号",romaji:"yousetsu kigou",id:"simbol las",en:"welding symbol",cat:"Welding"},
+{jp:"溶接仕様",romaji:"yousetsu shiyou",id:"spesifikasi las",en:"welding specification",cat:"Welding"},
+{jp:"溶接条件表",romaji:"yousetsu joukenhyou",id:"tabel kondisi las",en:"welding condition sheet",cat:"Welding"},
+{jp:"溶接順序",romaji:"yousetsu junjo",id:"urutan pengelasan",en:"welding sequence",cat:"Welding"},
+{jp:"溶接方向",romaji:"yousetsu houkou",id:"arah pengelasan",en:"welding direction",cat:"Welding"},
+
+/* ===== Material ===== */
+{jp:"平板",romaji:"heiban",id:"plat datar",en:"flat plate",cat:"Material"},
+{jp:"曲げ材",romaji:"magezai",id:"material tekuk",en:"bent material",cat:"Material"},
+{jp:"丸パイプ",romaji:"maru paipu",id:"pipa bulat",en:"round pipe",cat:"Material"},
+{jp:"角パイプ",romaji:"kaku paipu",id:"pipa kotak",en:"square pipe",cat:"Material"},
+{jp:"板材",romaji:"itazai",id:"bahan plat",en:"plate material",cat:"Material"},
+{jp:"線材",romaji:"senzai",id:"bahan kawat",en:"wire material",cat:"Material"},
+{jp:"材質記号",romaji:"zaishitsu kigou",id:"kode material",en:"material code",cat:"Material"},
+{jp:"材料番号",romaji:"zairyou bangou",id:"nomor material",en:"material number",cat:"Material"},
+{jp:"材料厚",romaji:"zairyou atsu",id:"ketebalan material",en:"material thickness",cat:"Material"},
+{jp:"材料幅",romaji:"zairyou haba",id:"lebar material",en:"material width",cat:"Material"},
+
+/* ===== Equipment ===== */
+{jp:"溶接電源装置",romaji:"yousetsu dengen souchi",id:"unit daya las",en:"welding power unit",cat:"Equipment"},
+{jp:"制御ユニット",romaji:"seigyo yunitto",id:"unit kontrol",en:"control unit",cat:"Equipment"},
+{jp:"表示ランプ",romaji:"hyouji ranpu",id:"lampu indikator",en:"indicator lamp",cat:"Equipment"},
+{jp:"操作レバー",romaji:"sousa rebā",id:"tuas operasi",en:"operation lever",cat:"Equipment"},
+{jp:"駆動モーター",romaji:"kudou mootaa",id:"motor penggerak",en:"drive motor",cat:"Equipment"},
+{jp:"冷却水",romaji:"reikyaku sui",id:"air pendingin",en:"cooling water",cat:"Equipment"},
+{jp:"保護カバー",romaji:"hogo kabā",id:"penutup pelindung",en:"protective cover",cat:"Equipment"},
+{jp:"装置異常",romaji:"souchi ijou",id:"kelainan alat",en:"equipment abnormality",cat:"Equipment"},
+
+/* ===== Inspection (QC) ===== */
+{jp:"検査範囲",romaji:"kensa han-i",id:"cakupan inspeksi",en:"inspection scope",cat:"Inspection"},
+{jp:"検査項目",romaji:"kensa koumoku",id:"item inspeksi",en:"inspection item",cat:"Inspection"},
+{jp:"測定基準",romaji:"sokutei kijun",id:"standar pengukuran",en:"measurement standard",cat:"Inspection"},
+{jp:"検査精度",romaji:"kensa seido",id:"akurasi inspeksi",en:"inspection accuracy",cat:"Inspection"},
+{jp:"検査時間",romaji:"kensa jikan",id:"waktu inspeksi",en:"inspection time",cat:"Inspection"},
+{jp:"検査場所",romaji:"kensa basho",id:"lokasi inspeksi",en:"inspection location",cat:"Inspection"},
+{jp:"検査完了",romaji:"kensa kanryou",id:"inspeksi selesai",en:"inspection completed",cat:"Inspection"},
+{jp:"検査待ち",romaji:"kensa machi",id:"menunggu inspeksi",en:"waiting for inspection",cat:"Inspection"},
+
+/* ===== Defect (NG) ===== */
+{jp:"外観不良",romaji:"gaikan furyou",id:"cacat tampilan",en:"appearance defect",cat:"Defect"},
+{jp:"溶接割れ",romaji:"yousetsu ware",id:"retak las",en:"weld crack",cat:"Defect"},
+{jp:"溶接ムラ",romaji:"yousetsu mura",id:"hasil las tidak rata",en:"uneven welding",cat:"Defect"},
+{jp:"溶接過多",romaji:"yousetsu kata",id:"las berlebihan",en:"over welding",cat:"Defect"},
+{jp:"溶接不足部",romaji:"yousetsu busoku bu",id:"bagian las kurang",en:"under-welded area",cat:"Defect"},
+{jp:"欠損",romaji:"kesson",id:"bagian hilang",en:"missing part",cat:"Defect"},
+{jp:"不完全",romaji:"fukanzen",id:"tidak sempurna",en:"imperfect",cat:"Defect"},
+
+/* ===== Safety (K3) ===== */
+{jp:"安全標識",romaji:"anzen hyoushiki",id:"rambu keselamatan",en:"safety sign",cat:"Safety"},
+{jp:"立入注意",romaji:"tachiiri chuui",id:"hati-hati masuk area",en:"entry caution",cat:"Safety"},
+{jp:"保護装備",romaji:"hogo soubi",id:"perlengkapan pelindung",en:"protective gear",cat:"Safety"},
+{jp:"火気厳禁",romaji:"kaki genkin",id:"dilarang api",en:"no open flame",cat:"Safety"},
+{jp:"高所作業",romaji:"kousho sagyou",id:"kerja di ketinggian",en:"work at height",cat:"Safety"},
+{jp:"安全点検",romaji:"anzen tenken",id:"pemeriksaan keselamatan",en:"safety inspection",cat:"Safety"},
+{jp:"防護柵",romaji:"bougosaku",id:"pagar pelindung",en:"safety fence",cat:"Safety"},
+
+/* ===== Tools ===== */
+{jp:"溶接ハンマー",romaji:"yousetsu hanmaa",id:"palu las",en:"welding hammer",cat:"Tools"},
+{jp:"チッピングハンマー",romaji:"chippingu hanmaa",id:"palu terak",en:"chipping hammer",cat:"Tools"},
+{jp:"ワイヤブラシ",romaji:"waiya burashi",id:"sikat kawat",en:"wire brush",cat:"Tools"},
+{jp:"切断刃",romaji:"setsudan yaiba",id:"mata potong",en:"cutting blade",cat:"Tools"},
+{jp:"固定クランプ",romaji:"kotei kuranpu",id:"klem pengikat",en:"fixing clamp",cat:"Tools"},
+{jp:"工具箱",romaji:"kougubako",id:"kotak alat",en:"tool box",cat:"Tools"},
+
+/* ===== Process ===== */
+{jp:"作業工程",romaji:"sagyou koutei",id:"tahap kerja",en:"work process",cat:"Process"},
+{jp:"工程確認",romaji:"koutei kakunin",id:"cek proses",en:"process check",cat:"Process"},
+{jp:"作業中断",romaji:"sagyou chuudan",id:"hentikan pekerjaan",en:"work interruption",cat:"Process"},
+{jp:"再開",romaji:"saikai",id:"lanjut kembali",en:"resume",cat:"Process"},
+{jp:"作業完了確認",romaji:"sagyou kanryou kakunin",id:"konfirmasi selesai kerja",en:"work completion check",cat:"Process"},
+{jp:"報告",romaji:"houkoku",id:"laporan",en:"report",cat:"Process"},
+{jp:"連絡",romaji:"renraku",id:"koordinasi",en:"communication",cat:"Process"},
+
+/* =================================================
+   TAMBAHAN 100 KOSAKATA BARU (ANTI DUPLIKAT)
+================================================= */
+
+/* ===== Welding ===== */
+{jp:"溶接熱影響部",romaji:"yousetsu netsu eikyou bu",id:"daerah terpengaruh panas las",en:"heat affected zone",cat:"Welding"},
+{jp:"溶接始端",romaji:"yousetsu shitan",id:"awal pengelasan",en:"weld start",cat:"Welding"},
+{jp:"溶接終端",romaji:"yousetsu shuutan",id:"akhir pengelasan",en:"weld termination",cat:"Welding"},
+{jp:"溶接電極角",romaji:"yousetsu denkyoku kaku",id:"sudut elektroda las",en:"electrode angle",cat:"Welding"},
+{jp:"溶接姿勢区分",romaji:"yousetsu shisei kubun",id:"klasifikasi posisi las",en:"welding position classification",cat:"Welding"},
+{jp:"溶接欠陥防止",romaji:"yousetsu kekkan boushi",id:"pencegahan cacat las",en:"weld defect prevention",cat:"Welding"},
+{jp:"溶接条件設定",romaji:"yousetsu jouken settei",id:"pengaturan kondisi las",en:"welding condition setting",cat:"Welding"},
+{jp:"溶接後処理",romaji:"yousetsu go shori",id:"perlakuan setelah las",en:"post-weld treatment",cat:"Welding"},
+{jp:"溶接準備作業",romaji:"yousetsu junbi sagyou",id:"pekerjaan persiapan las",en:"welding preparation work",cat:"Welding"},
+{jp:"溶接技能",romaji:"yousetsu ginou",id:"keahlian mengelas",en:"welding skill",cat:"Welding"},
+
+/* ===== Material ===== */
+{jp:"鋼板",romaji:"kouban",id:"plat baja",en:"steel plate",cat:"Material"},
+{jp:"材料ロット",romaji:"zairyou rotto",id:"lot material",en:"material lot",cat:"Material"},
+{jp:"材料検査",romaji:"zairyou kensa",id:"inspeksi material",en:"material inspection",cat:"Material"},
+{jp:"材料表面",romaji:"zairyou hyoumen",id:"permukaan material",en:"material surface",cat:"Material"},
+{jp:"材料状態",romaji:"zairyou joutai",id:"kondisi material",en:"material condition",cat:"Material"},
+{jp:"材料寸法",romaji:"zairyou sunpou",id:"dimensi material",en:"material dimension",cat:"Material"},
+{jp:"材料重量",romaji:"zairyou juuryou",id:"berat material",en:"material weight",cat:"Material"},
+{jp:"材料形状",romaji:"zairyou keijou",id:"bentuk material",en:"material shape",cat:"Material"},
+{jp:"材料管理",romaji:"zairyou kanri",id:"manajemen material",en:"material management",cat:"Material"},
+{jp:"材料選定",romaji:"zairyou sentei",id:"pemilihan material",en:"material selection",cat:"Material"},
+
+/* ===== Equipment ===== */
+{jp:"溶接制御装置",romaji:"yousetsu seigyo souchi",id:"alat kontrol pengelasan",en:"welding control device",cat:"Equipment"},
+{jp:"溶接冷却装置",romaji:"yousetsu reikyaku souchi",id:"alat pendingin las",en:"welding cooling unit",cat:"Equipment"},
+{jp:"機器設定",romaji:"kiki settei",id:"pengaturan mesin",en:"equipment setting",cat:"Equipment"},
+{jp:"装置起動",romaji:"souchi kidou",id:"menyalakan alat",en:"equipment startup",cat:"Equipment"},
+{jp:"装置停止操作",romaji:"souchi teishi sousa",id:"operasi penghentian alat",en:"equipment stop operation",cat:"Equipment"},
+{jp:"機器異音",romaji:"kiki ion",id:"suara tidak normal mesin",en:"abnormal machine noise",cat:"Equipment"},
+{jp:"機器温度",romaji:"kiki ondo",id:"suhu mesin",en:"equipment temperature",cat:"Equipment"},
+{jp:"装置警告",romaji:"souchi keikoku",id:"peringatan alat",en:"equipment warning",cat:"Equipment"},
+
+/* ===== Inspection (QC) ===== */
+{jp:"検査工程",romaji:"kensa koutei",id:"tahap inspeksi",en:"inspection process",cat:"Inspection"},
+{jp:"検査記録表",romaji:"kensa kirokuhyou",id:"lembar catatan inspeksi",en:"inspection record sheet",cat:"Inspection"},
+{jp:"測定誤差",romaji:"sokutei gosa",id:"kesalahan ukur",en:"measurement error",cat:"Inspection"},
+{jp:"検査基準書",romaji:"kensa kijunsho",id:"dokumen standar inspeksi",en:"inspection standard document",cat:"Inspection"},
+{jp:"検査判定者",romaji:"kensa hanteisha",id:"petugas penilai",en:"inspection judge",cat:"Inspection"},
+{jp:"検査履歴",romaji:"kensa rireki",id:"riwayat inspeksi",en:"inspection history",cat:"Inspection"},
+{jp:"検査合格品",romaji:"kensa goukakuhin",id:"produk lolos inspeksi",en:"approved product",cat:"Inspection"},
+{jp:"検査不合格品",romaji:"kensa fugoukakuhin",id:"produk gagal inspeksi",en:"rejected product",cat:"Inspection"},
+
+/* ===== Defect (NG) ===== */
+{jp:"溶接不完全",romaji:"yousetsu fukanzen",id:"pengelasan tidak sempurna",en:"incomplete welding",cat:"Defect"},
+{jp:"外観異常",romaji:"gaikan ijou",id:"kelainan tampilan",en:"appearance abnormality",cat:"Defect"},
+{jp:"溶接凹凸",romaji:"yousetsu outotsu",id:"las tidak rata",en:"uneven weld surface",cat:"Defect"},
+{jp:"欠陥発生",romaji:"kekkan hassei",id:"terjadi cacat",en:"defect occurrence",cat:"Defect"},
+{jp:"再溶接",romaji:"sai yousetsu",id:"pengelasan ulang",en:"re-welding",cat:"Defect"},
+{jp:"不具合箇所",romaji:"fuguai kasho",id:"bagian bermasalah",en:"problem area",cat:"Defect"},
+{jp:"品質低下",romaji:"hinshitsu teika",id:"penurunan kualitas",en:"quality deterioration",cat:"Defect"},
+
+/* ===== Safety (K3) ===== */
+{jp:"安全対策",romaji:"anzen taisaku",id:"tindakan keselamatan",en:"safety measures",cat:"Safety"},
+{jp:"作業前点検",romaji:"sagyou mae tenken",id:"pemeriksaan sebelum kerja",en:"pre-work inspection",cat:"Safety"},
+{jp:"保護手順",romaji:"hogo tejun",id:"prosedur perlindungan",en:"protection procedure",cat:"Safety"},
+{jp:"安全基準",romaji:"anzen kijun",id:"standar keselamatan",en:"safety standard",cat:"Safety"},
+{jp:"危険表示",romaji:"kiken hyouji",id:"tanda bahaya",en:"danger sign",cat:"Safety"},
+{jp:"安全通路",romaji:"anzen tsuuro",id:"jalur aman",en:"safety passage",cat:"Safety"},
+{jp:"作業環境",romaji:"sagyou kankyou",id:"lingkungan kerja",en:"work environment",cat:"Safety"},
+
+/* ===== Tools ===== */
+{jp:"溶接ペンチ",romaji:"yousetsu penchi",id:"tang las",en:"welding pliers",cat:"Tools"},
+{jp:"電動グラインダー",romaji:"dendou guraindaa",id:"gerinda listrik",en:"electric grinder",cat:"Tools"},
+{jp:"切断ディスク",romaji:"setsudan disuku",id:"cakram potong",en:"cutting disc",cat:"Tools"},
+{jp:"測定スケール",romaji:"sokutei sukeeru",id:"skala ukur",en:"measuring scale",cat:"Tools"},
+{jp:"工具管理",romaji:"kougu kanri",id:"manajemen alat",en:"tool management",cat:"Tools"},
+{jp:"工具使用",romaji:"kougu shiyou",id:"penggunaan alat",en:"tool usage",cat:"Tools"},
+
+/* ===== Process ===== */
+{jp:"工程計画",romaji:"koutei keikaku",id:"perencanaan proses",en:"process planning",cat:"Process"},
+{jp:"工程調整",romaji:"koutei chousei",id:"penyesuaian proses",en:"process adjustment",cat:"Process"},
+{jp:"作業割当",romaji:"sagyou wariate",id:"pembagian tugas",en:"work assignment",cat:"Process"},
+{jp:"作業指示書",romaji:"sagyou shijisho",id:"lembar instruksi kerja",en:"work instruction sheet",cat:"Process"},
+{jp:"作業実績",romaji:"sagyou jisseki",id:"realisasi kerja",en:"work performance",cat:"Process"},
+{jp:"工程完了",romaji:"koutei kanryou",id:"proses selesai",en:"process completed",cat:"Process"},
+{jp:"作業評価",romaji:"sagyou hyouka",id:"evaluasi kerja",en:"work evaluation",cat:"Process"},
+
+ /* =================================================
+   TAMBAHAN 100 KOSAKATA BARU (ANTI DUPLIKAT)
+================================================= */
+
+/* ===== Welding ===== */
+{jp:"溶接電流値",romaji:"yousetsu denryuu chi",id:"nilai arus las",en:"welding current value",cat:"Welding"},
+{jp:"溶接電圧値",romaji:"yousetsu denatsu chi",id:"nilai tegangan las",en:"welding voltage value",cat:"Welding"},
+{jp:"溶接速度設定",romaji:"yousetsu sokudo settei",id:"pengaturan kecepatan las",en:"welding speed setting",cat:"Welding"},
+{jp:"溶接入熱",romaji:"yousetsu nyuunetsu",id:"masukan panas las",en:"welding heat input",cat:"Welding"},
+{jp:"溶接姿勢記号",romaji:"yousetsu shisei kigou",id:"simbol posisi las",en:"welding position symbol",cat:"Welding"},
+{jp:"溶接施工法",romaji:"yousetsu sekouhou",id:"metode pelaksanaan las",en:"welding procedure",cat:"Welding"},
+{jp:"溶接施工条件",romaji:"yousetsu sekou jouken",id:"kondisi pelaksanaan las",en:"welding procedure condition",cat:"Welding"},
+{jp:"溶接作業者",romaji:"yousetsu sagyousha",id:"operator las",en:"welding operator",cat:"Welding"},
+{jp:"溶接資格",romaji:"yousetsu shikaku",id:"sertifikasi las",en:"welding qualification",cat:"Welding"},
+{jp:"溶接教育",romaji:"yousetsu kyouiku",id:"pelatihan pengelasan",en:"welding training",cat:"Welding"},
+
+/* ===== Material ===== */
+{jp:"材料保管",romaji:"zairyou hokan",id:"penyimpanan material",en:"material storage",cat:"Material"},
+{jp:"材料搬入",romaji:"zairyou hanyuu",id:"material masuk",en:"material receiving",cat:"Material"},
+{jp:"材料搬出",romaji:"zairyou hanshutsu",id:"material keluar",en:"material dispatch",cat:"Material"},
+{jp:"材料表示",romaji:"zairyou hyouji",id:"penandaan material",en:"material marking",cat:"Material"},
+{jp:"材料汚染",romaji:"zairyou osen",id:"kontaminasi material",en:"material contamination",cat:"Material"},
+{jp:"材料劣化",romaji:"zairyou rekka",id:"degradasi material",en:"material degradation",cat:"Material"},
+{jp:"材料温度",romaji:"zairyou ondo",id:"suhu material",en:"material temperature",cat:"Material"},
+{jp:"材料識別",romaji:"zairyou shikibetsu",id:"identifikasi material",en:"material identification",cat:"Material"},
+{jp:"材料規格書",romaji:"zairyou kikakusho",id:"dokumen spesifikasi material",en:"material specification sheet",cat:"Material"},
+{jp:"材料不適合",romaji:"zairyou futekigou",id:"material tidak sesuai",en:"material nonconformity",cat:"Material"},
+
+/* ===== Equipment ===== */
+{jp:"溶接電流制御",romaji:"yousetsu denryuu seigyo",id:"kontrol arus las",en:"welding current control",cat:"Equipment"},
+{jp:"溶接電圧制御",romaji:"yousetsu denatsu seigyo",id:"kontrol tegangan las",en:"welding voltage control",cat:"Equipment"},
+{jp:"装置校正",romaji:"souchi kousei",id:"kalibrasi alat",en:"equipment calibration",cat:"Equipment"},
+{jp:"装置清掃",romaji:"souchi seisou",id:"pembersihan alat",en:"equipment cleaning",cat:"Equipment"},
+{jp:"機器寿命",romaji:"kiki jumyou",id:"umur mesin",en:"equipment lifespan",cat:"Equipment"},
+{jp:"機器負荷",romaji:"kiki fuka",id:"beban mesin",en:"equipment load",cat:"Equipment"},
+{jp:"機器異常停止",romaji:"kiki ijou teishi",id:"mesin berhenti abnormal",en:"abnormal equipment stop",cat:"Equipment"},
+{jp:"装置復旧",romaji:"souchi fukkyuu",id:"pemulihan alat",en:"equipment recovery",cat:"Equipment"},
+
+/* ===== Inspection (QC) ===== */
+{jp:"検査計画",romaji:"kensa keikaku",id:"rencana inspeksi",en:"inspection plan",cat:"Inspection"},
+{jp:"検査実施",romaji:"kensa jisshi",id:"pelaksanaan inspeksi",en:"inspection execution",cat:"Inspection"},
+{jp:"測定結果",romaji:"sokutei kekka",id:"hasil pengukuran",en:"measurement result",cat:"Inspection"},
+{jp:"検査承認",romaji:"kensa shounin",id:"persetujuan inspeksi",en:"inspection approval",cat:"Inspection"},
+{jp:"検査是正",romaji:"kensa zeisei",id:"perbaikan hasil inspeksi",en:"inspection correction",cat:"Inspection"},
+{jp:"検査報告書",romaji:"kensa houkokusho",id:"laporan inspeksi",en:"inspection report",cat:"Inspection"},
+{jp:"検査保留",romaji:"kensa horyuu",id:"inspeksi ditunda",en:"inspection on hold",cat:"Inspection"},
+{jp:"検査終了",romaji:"kensa shuuryou",id:"akhir inspeksi",en:"inspection finished",cat:"Inspection"},
+
+/* ===== Defect (NG) ===== */
+{jp:"溶接表面不良",romaji:"yousetsu hyoumen furyou",id:"cacat permukaan las",en:"weld surface defect",cat:"Defect"},
+{jp:"溶接内部欠陥",romaji:"yousetsu naibu kekkan",id:"cacat internal las",en:"internal weld defect",cat:"Defect"},
+{jp:"溶接焼け",romaji:"yousetsu yake",id:"bekas panas las",en:"weld burn mark",cat:"Defect"},
+{jp:"溶接欠落",romaji:"yousetsu ketsuraku",id:"bagian las hilang",en:"missing weld",cat:"Defect"},
+{jp:"溶接偏肉",romaji:"yousetsu henniku",id:"ketebalan las tidak merata",en:"uneven weld thickness",cat:"Defect"},
+{jp:"外観損傷",romaji:"gaikan sonshou",id:"kerusakan tampilan",en:"appearance damage",cat:"Defect"},
+{jp:"品質異常",romaji:"hinshitsu ijou",id:"abnormal kualitas",en:"quality abnormality",cat:"Defect"},
+
+/* ===== Safety (K3) ===== */
+{jp:"作業安全確認",romaji:"sagyou anzen kakunin",id:"cek keselamatan kerja",en:"work safety confirmation",cat:"Safety"},
+{jp:"保護具着用",romaji:"hogogu chakuyou",id:"wajib APD",en:"protective equipment required",cat:"Safety"},
+{jp:"感電注意",romaji:"kanden chuui",id:"awas sengatan listrik",en:"electric shock warning",cat:"Safety"},
+{jp:"高温注意表示",romaji:"kouon chuui hyouji",id:"peringatan suhu tinggi",en:"high temperature warning sign",cat:"Safety"},
+{jp:"作業区域区分",romaji:"sagyou kuiki kubun",id:"pembagian area kerja",en:"work area zoning",cat:"Safety"},
+{jp:"保護柵設置",romaji:"bougosaku setchi",id:"pemasangan pagar pengaman",en:"safety fence installation",cat:"Safety"},
+{jp:"安全管理者",romaji:"anzen kanrisha",id:"petugas K3",en:"safety officer",cat:"Safety"},
+
+/* ===== Tools ===== */
+{jp:"溶接トング",romaji:"yousetsu tongu",id:"penjepit las",en:"welding tongs",cat:"Tools"},
+{jp:"温度計",romaji:"ondokei",id:"termometer",en:"thermometer",cat:"Tools"},
+{jp:"圧力計測器",romaji:"atsuryoku keisokuki",id:"alat ukur tekanan",en:"pressure measuring device",cat:"Tools"},
+{jp:"工具校正",romaji:"kougu kousei",id:"kalibrasi alat",en:"tool calibration",cat:"Tools"},
+{jp:"工具清掃",romaji:"kougu seisou",id:"pembersihan alat",en:"tool cleaning",cat:"Tools"},
+{jp:"工具交換",romaji:"kougu koukan",id:"penggantian alat",en:"tool replacement",cat:"Tools"},
+
+/* ===== Process ===== */
+{jp:"工程開始",romaji:"koutei kaishi",id:"awal proses",en:"process start",cat:"Process"},
+{jp:"工程停止",romaji:"koutei teishi",id:"hentikan proses",en:"process stop",cat:"Process"},
+{jp:"工程再開",romaji:"koutei saikai",id:"lanjutkan proses",en:"process restart",cat:"Process"},
+{jp:"作業順守",romaji:"sagyou junshu",id:"kepatuhan kerja",en:"work compliance",cat:"Process"},
+{jp:"工程評価",romaji:"koutei hyouka",id:"evaluasi proses",en:"process evaluation",cat:"Process"},
+{jp:"工程改善提案",romaji:"koutei kaizen teian",id:"usulan perbaikan proses",en:"process improvement proposal",cat:"Process"},
+{jp:"作業完了報告",romaji:"sagyou kanryou houkoku",id:"laporan selesai kerja",en:"work completion report",cat:"Process"}
+  
    
 ];
