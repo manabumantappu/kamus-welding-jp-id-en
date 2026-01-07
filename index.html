@@ -15,6 +15,7 @@
   --text:#1f2937;
   --muted:#6b7280;
   --primary:#3a5a40;
+  --highlight:#fde68a;
 }
 
 /* DARK MODE */
@@ -24,6 +25,7 @@ body.dark{
   --text:#f8fafc;
   --muted:#94a3b8;
   --primary:#86efac;
+  --highlight:#92400e;
 }
 
 /* =====================
@@ -120,7 +122,17 @@ button.active{
 }
 
 /* =====================
-   CATEGORY COLORS
+   HIGHLIGHT
+===================== */
+mark{
+  background:var(--highlight);
+  color:#111;
+  padding:2px 4px;
+  border-radius:4px;
+}
+
+/* =====================
+   CATEGORY BADGE
 ===================== */
 .badge{
   display:inline-block;
@@ -194,6 +206,9 @@ footer{
 © Kamus Welding JP–ID–EN
 </footer>
 
+<!-- DATA -->
+<script src="data.js"></script>
+
 <script>
 let lang="jp";
 
@@ -202,24 +217,34 @@ const search=document.getElementById("search");
 const category=document.getElementById("category");
 const sort=document.getElementById("sort");
 
+/* Highlight function */
+function highlight(text, keyword){
+  if(!keyword) return text;
+  const regex = new RegExp(`(${keyword})`, "gi");
+  return text.replace(regex, "<mark>$1</mark>");
+}
+
 function render(){
  list.innerHTML="";
  let filtered=[...data];
+ const key=search.value.toLowerCase();
 
  if(category.value!=="all"){
    filtered=filtered.filter(d=>d.cat===category.value);
  }
 
- filtered=filtered.filter(d=>d[lang].toLowerCase().includes(search.value.toLowerCase()));
+ filtered=filtered.filter(d =>
+   d[lang].toLowerCase().includes(key)
+ );
 
  filtered.sort((a,b)=>a[sort.value].localeCompare(b[sort.value]));
 
  filtered.forEach(d=>{
    list.innerHTML+=`
    <div class="card">
-     <h3>${d.jp}</h3>
+     <h3>${highlight(d.jp, key)}</h3>
      <div class="romaji">${d.romaji}</div>
-     <div class="meaning">${d[lang]}</div>
+     <div class="meaning">${highlight(d[lang], key)}</div>
      <div class="badge ${d.cat}">${d.cat}</div>
    </div>`;
  });
