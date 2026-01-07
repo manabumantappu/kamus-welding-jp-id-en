@@ -1544,8 +1544,147 @@ const data = [
 {jp:"回復計画",romaji:"kaifuku keikaku",id:"rencana pemulihan",en:"recovery plan",cat:"Process"},
 {jp:"冗長化設計",romaji:"joujouka sekkei",id:"desain redundansi",en:"redundancy design",cat:"Process"},
 {jp:"代替供給源",romaji:"daitai kyoukyuu gen",id:"sumber pasokan alternatif",en:"alternative supplier",cat:"Process"},
-{jp:"安定操業",romaji:"antei sougyou",id:"operasi stabil",en:"stable operation",cat:"Process"}
+{jp:"安定操業",romaji:"antei sougyou",id:"operasi stabil",en:"stable operation",cat:"Process"},
  
-  
+ /* =================================================
+   INSPECTION ADVANCED – BATCH 1 (100)
+   QC Operation / Metrology / SPC / Audit / Document
+================================================= */
+
+/* ===== Inspection Operation ===== */
+{jp:"受入検査",romaji:"ukeire kensa",id:"inspeksi penerimaan",en:"incoming inspection",cat:"Inspection"},
+{jp:"工程内検査",romaji:"koutei nai kensa",id:"inspeksi proses",en:"in-process inspection",cat:"Inspection"},
+{jp:"最終検査",romaji:"saishuu kensa",id:"inspeksi akhir",en:"final inspection",cat:"Inspection"},
+{jp:"抜取検査",romaji:"nukitori kensa",id:"inspeksi sampling",en:"sampling inspection",cat:"Inspection"},
+{jp:"全数検査",romaji:"zensuu kensa",id:"inspeksi 100%",en:"100% inspection",cat:"Inspection"},
+{jp:"合否判定",romaji:"gouhi hantei",id:"penilaian lulus/gagal",en:"acceptance judgement",cat:"Inspection"},
+{jp:"判定基準",romaji:"hantei kijun",id:"kriteria penilaian",en:"judgement criteria",cat:"Inspection"},
+{jp:"検査条件設定",romaji:"kensa jouken settei",id:"penetapan kondisi inspeksi",en:"inspection condition setting",cat:"Inspection"},
+{jp:"検査対象範囲",romaji:"kensa taishou hani",id:"cakupan inspeksi",en:"inspection scope",cat:"Inspection"},
+{jp:"検査頻度",romaji:"kensa hindo",id:"frekuensi inspeksi",en:"inspection frequency",cat:"Inspection"},
+
+/* ===== Measurement / Metrology ===== */
+{jp:"測定精度",romaji:"sokutei seido",id:"akurasi pengukuran",en:"measurement accuracy",cat:"Inspection"},
+{jp:"測定不確かさ",romaji:"sokutei futashikasa",id:"ketidakpastian ukur",en:"measurement uncertainty",cat:"Inspection"},
+{jp:"測定再現性",romaji:"sokutei saigensei",id:"reprodusibilitas ukur",en:"measurement reproducibility",cat:"Inspection"},
+{jp:"測定反復性",romaji:"sokutei hanpukusei",id:"repeatabilitas ukur",en:"measurement repeatability",cat:"Inspection"},
+{jp:"測定分解能",romaji:"sokutei bunkainou",id:"resolusi ukur",en:"measurement resolution",cat:"Inspection"},
+{jp:"校正管理",romaji:"kousei kanri",id:"manajemen kalibrasi",en:"calibration control",cat:"Inspection"},
+{jp:"校正状態",romaji:"kousei joutai",id:"status kalibrasi",en:"calibration status",cat:"Inspection"},
+{jp:"基準値",romaji:"kijunchi",id:"nilai acuan",en:"reference value",cat:"Inspection"},
+{jp:"測定方法",romaji:"sokutei houhou",id:"metode pengukuran",en:"measurement method",cat:"Inspection"},
+{jp:"測定誤差",romaji:"sokutei gosa",id:"kesalahan ukur",en:"measurement error",cat:"Inspection"},
+
+/* ===== SPC / Statistical QC ===== */
+{jp:"管理図監視",romaji:"kanrizu kanshi",id:"pemantauan peta kendali",en:"control chart monitoring",cat:"Inspection"},
+{jp:"外れ点",romaji:"hazureten",id:"titik di luar kendali",en:"out-of-control point",cat:"Inspection"},
+{jp:"異常傾向",romaji:"ijou keikou",id:"tren abnormal",en:"abnormal trend",cat:"Inspection"},
+{jp:"工程安定性",romaji:"koutei anteisei",id:"stabilitas proses",en:"process stability",cat:"Inspection"},
+{jp:"工程能力評価",romaji:"koutei nouryoku hyouka",id:"evaluasi kapabilitas proses",en:"process capability evaluation",cat:"Inspection"},
+{jp:"ばらつき管理",romaji:"baratsuki kanri",id:"pengendalian variasi",en:"variation control",cat:"Inspection"},
+{jp:"管理限界逸脱",romaji:"kanri genkai itsudatsu",id:"penyimpangan batas kendali",en:"control limit violation",cat:"Inspection"},
+{jp:"統計的判定",romaji:"toukeiteki hantei",id:"penilaian statistik",en:"statistical judgement",cat:"Inspection"},
+{jp:"工程監視項目",romaji:"koutei kanshi koumoku",id:"item pemantauan proses",en:"process monitoring item",cat:"Inspection"},
+{jp:"データばらつき",romaji:"deeta baratsuki",id:"variasi data",en:"data variation",cat:"Inspection"},
+
+/* ===== Audit / Compliance ===== */
+{jp:"品質監査",romaji:"hinshitsu kansa",id:"audit kualitas",en:"quality audit",cat:"Inspection"},
+{jp:"監査基準",romaji:"kansa kijun",id:"kriteria audit",en:"audit criteria",cat:"Inspection"},
+{jp:"監査範囲",romaji:"kansa hani",id:"cakupan audit",en:"audit scope",cat:"Inspection"},
+{jp:"監査証拠",romaji:"kansa shouko",id:"bukti audit",en:"audit evidence",cat:"Inspection"},
+{jp:"不適合事項",romaji:"futekigou jikou",id:"ketidaksesuaian",en:"nonconformity",cat:"Inspection"},
+{jp:"是正処置要求",romaji:"zeisei shochi youkyuu",id:"permintaan tindakan korektif",en:"corrective action request",cat:"Inspection"},
+{jp:"是正効果確認",romaji:"zeisei kouka kakunin",id:"verifikasi efektivitas koreksi",en:"corrective effectiveness verification",cat:"Inspection"},
+{jp:"監査フォローアップ",romaji:"kansa foroo appu",id:"tindak lanjut audit",en:"audit follow-up",cat:"Inspection"},
+{jp:"規格適合確認",romaji:"kikaku tekigou kakunin",id:"verifikasi kesesuaian standar",en:"standard conformity verification",cat:"Inspection"},
+{jp:"遵守状況",romaji:"junshu joukyou",id:"status kepatuhan",en:"compliance status",cat:"Inspection"},
+
+/* ===== Documentation / Record ===== */
+{jp:"検査記録",romaji:"kensa kiroku",id:"catatan inspeksi",en:"inspection record",cat:"Inspection"},
+{jp:"検査成績書",romaji:"kensa seisekisho",id:"laporan hasil inspeksi",en:"inspection report",cat:"Inspection"},
+{jp:"測定データ管理",romaji:"sokutei deeta kanri",id:"manajemen data ukur",en:"measurement data management",cat:"Inspection"},
+{jp:"判定理由記載",romaji:"hantei riyuu kisai",id:"pencatatan alasan keputusan",en:"judgement rationale entry",cat:"Inspection"},
+{jp:"トレーサビリティ記録",romaji:"toreesabiriti kiroku",id:"catatan ketertelusuran",en:"traceability record",cat:"Inspection"},
+{jp:"文書改訂管理",romaji:"bunsho kaitei kanri",id:"kontrol revisi dokumen",en:"document revision control",cat:"Inspection"},
+{jp:"承認記録",romaji:"shounin kiroku",id:"catatan persetujuan",en:"approval record",cat:"Inspection"},
+{jp:"保存期間",romaji:"hozon kikan",id:"masa simpan dokumen",en:"retention period",cat:"Inspection"},
+{jp:"記録完全性",romaji:"kiroku kanzensei",id:"integritas catatan",en:"record integrity",cat:"Inspection"},
+{jp:"電子記録管理",romaji:"denshi kiroku kanri",id:"manajemen catatan elektronik",en:"electronic record management",cat:"Inspection"},
+ 
+/* =================================================
+   INSPECTION ADVANCED – AI & AUTOMATION (50)
+================================================= */
+
+{jp:"AI検査判定",romaji:"AI kensa hantei",id:"penilaian inspeksi berbasis AI",en:"AI inspection judgement",cat:"Inspection"},
+{jp:"画像判定結果",romaji:"gazou hantei kekka",id:"hasil penilaian gambar",en:"image judgement result",cat:"Inspection"},
+{jp:"自動合否判定",romaji:"jidou gouhi hantei",id:"keputusan lulus/gagal otomatis",en:"automatic pass/fail judgement",cat:"Inspection"},
+{jp:"検査アルゴリズム",romaji:"kensa arugorizumu",id:"algoritma inspeksi",en:"inspection algorithm",cat:"Inspection"},
+{jp:"AI判定精度",romaji:"AI hantei seido",id:"akurasi keputusan AI",en:"AI judgement accuracy",cat:"Inspection"},
+{jp:"誤判定率",romaji:"gohantei ritsu",id:"tingkat salah penilaian",en:"misjudgement rate",cat:"Inspection"},
+{jp:"画像学習データ",romaji:"gazou gakushuu deeta",id:"data latih gambar",en:"image training data",cat:"Inspection"},
+{jp:"検査モデル更新",romaji:"kensa moderu koushin",id:"pembaruan model inspeksi",en:"inspection model update",cat:"Inspection"},
+{jp:"リアルタイム検査",romaji:"riarutaimu kensa",id:"inspeksi waktu nyata",en:"real-time inspection",cat:"Inspection"},
+{jp:"自動検査ライン",romaji:"jidou kensa rain",id:"lini inspeksi otomatis",en:"automatic inspection line",cat:"Inspection"},
+
+{jp:"検査AI信頼性",romaji:"kensa AI shinraisei",id:"keandalan AI inspeksi",en:"inspection AI reliability",cat:"Inspection"},
+{jp:"AI判定根拠",romaji:"AI hantei konkyo",id:"dasar keputusan AI",en:"AI judgement rationale",cat:"Inspection"},
+{jp:"外観AI判定",romaji:"gaikan AI hantei",id:"penilaian tampilan berbasis AI",en:"AI visual judgement",cat:"Inspection"},
+{jp:"画像解析結果",romaji:"gazou kaiseki kekka",id:"hasil analisis gambar",en:"image analysis result",cat:"Inspection"},
+{jp:"異常パターン検出",romaji:"ijou pataan kenshutsu",id:"deteksi pola abnormal",en:"abnormal pattern detection",cat:"Inspection"},
+{jp:"自動NG抽出",romaji:"jidou NG chuushutsu",id:"ekstraksi NG otomatis",en:"automatic NG extraction",cat:"Inspection"},
+{jp:"検査工数削減",romaji:"kensa kousuu sakugen",id:"pengurangan beban inspeksi",en:"inspection workload reduction",cat:"Inspection"},
+{jp:"検査品質安定化",romaji:"kensa hinshitsu anteika",id:"stabilisasi mutu inspeksi",en:"inspection quality stabilization",cat:"Inspection"},
+{jp:"AI検査ログ",romaji:"AI kensa rogu",id:"log inspeksi AI",en:"AI inspection log",cat:"Inspection"},
+{jp:"自動判定履歴",romaji:"jidou hantei rireki",id:"riwayat keputusan otomatis",en:"automatic judgement history",cat:"Inspection"},
+
+{jp:"AI検査基準",romaji:"AI kensa kijun",id:"standar inspeksi AI",en:"AI inspection criteria",cat:"Inspection"},
+{jp:"判定閾値",romaji:"hantei ikichi",id:"ambang batas penilaian",en:"judgement threshold",cat:"Inspection"},
+{jp:"検査信頼度",romaji:"kensa shinraido",id:"tingkat kepercayaan inspeksi",en:"inspection confidence level",cat:"Inspection"},
+{jp:"AI検査導入評価",romaji:"AI kensa dounyuu hyouka",id:"evaluasi penerapan inspeksi AI",en:"AI inspection implementation evaluation",cat:"Inspection"},
+{jp:"検査自動化効果",romaji:"kensa jidouka kouka",id:"efektivitas otomatisasi inspeksi",en:"inspection automation effectiveness",cat:"Inspection"},
+{jp:"人検査併用",romaji:"hito kensa heiyou",id:"kombinasi inspeksi manusia",en:"human inspection combination",cat:"Inspection"},
+{jp:"最終判定責任",romaji:"saishuu hantei sekinin",id:"tanggung jawab keputusan akhir",en:"final judgement responsibility",cat:"Inspection"},
+{jp:"検査データ連携",romaji:"kensa deeta renkei",id:"integrasi data inspeksi",en:"inspection data integration",cat:"Inspection"},
+{jp:"AI検査承認",romaji:"AI kensa shounin",id:"persetujuan inspeksi AI",en:"AI inspection approval",cat:"Inspection"},
+{jp:"検査自動化方針",romaji:"kensa jidouka houshin",id:"kebijakan otomatisasi inspeksi",en:"inspection automation policy",cat:"Inspection"},
+
+/* =================================================
+   INSPECTION ADVANCED – DOCUMENT & AUDIT (50)
+================================================= */
+
+{jp:"不適合報告書",romaji:"futekigou houkokusho",id:"laporan ketidaksesuaian",en:"nonconformity report",cat:"Inspection"},
+{jp:"是正処置計画",romaji:"zeisei shochi keikaku",id:"rencana tindakan korektif",en:"corrective action plan",cat:"Inspection"},
+{jp:"予防処置計画",romaji:"yobou shochi keikaku",id:"rencana tindakan pencegahan",en:"preventive action plan",cat:"Inspection"},
+{jp:"CAPA管理",romaji:"CAPA kanri",id:"manajemen CAPA",en:"CAPA management",cat:"Inspection"},
+{jp:"是正期限設定",romaji:"zeisei kigen settei",id:"penetapan batas waktu koreksi",en:"corrective deadline setting",cat:"Inspection"},
+{jp:"是正進捗管理",romaji:"zeisei shinchoku kanri",id:"monitor progres koreksi",en:"corrective progress control",cat:"Inspection"},
+{jp:"是正完了判定",romaji:"zeisei kanryou hantei",id:"penilaian selesai koreksi",en:"corrective completion judgement",cat:"Inspection"},
+{jp:"再発防止確認",romaji:"saihatsu boushi kakunin",id:"verifikasi pencegahan ulang",en:"recurrence prevention verification",cat:"Inspection"},
+{jp:"監査指摘事項管理",romaji:"kansa shiteki jikou kanri",id:"manajemen temuan audit",en:"audit finding management",cat:"Inspection"},
+{jp:"監査是正報告",romaji:"kansa zeisei houkoku",id:"laporan koreksi audit",en:"audit corrective report",cat:"Inspection"},
+
+{jp:"監査報告書",romaji:"kansa houkokusho",id:"laporan audit",en:"audit report",cat:"Inspection"},
+{jp:"品質会議資料",romaji:"hinshitsu kaigi shiryou",id:"materi rapat kualitas",en:"quality meeting material",cat:"Inspection"},
+{jp:"承認フロー管理",romaji:"shounin furo- kanri",id:"manajemen alur persetujuan",en:"approval flow control",cat:"Inspection"},
+{jp:"承認待ち状態",romaji:"shounin machi joutai",id:"status menunggu persetujuan",en:"pending approval status",cat:"Inspection"},
+{jp:"承認履歴",romaji:"shounin rireki",id:"riwayat persetujuan",en:"approval history",cat:"Inspection"},
+{jp:"電子承認",romaji:"denshi shounin",id:"persetujuan elektronik",en:"electronic approval",cat:"Inspection"},
+{jp:"文書配布管理",romaji:"bunsho haifu kanri",id:"manajemen distribusi dokumen",en:"document distribution control",cat:"Inspection"},
+{jp:"最新版管理",romaji:"saishinban kanri",id:"kontrol versi terbaru",en:"latest version control",cat:"Inspection"},
+{jp:"旧版廃止",romaji:"kyuuhan haishi",id:"penarikan dokumen lama",en:"obsolete document withdrawal",cat:"Inspection"},
+{jp:"文書有効期限",romaji:"bunsho yuukou kigen",id:"masa berlaku dokumen",en:"document validity period",cat:"Inspection"},
+
+{jp:"監査証跡管理",romaji:"kansa shouseki kanri",id:"manajemen jejak audit",en:"audit trail management",cat:"Inspection"},
+{jp:"証拠資料添付",romaji:"shouko shiryou tenpu",id:"lampiran bukti pendukung",en:"evidence attachment",cat:"Inspection"},
+{jp:"是正責任者",romaji:"zeisei sekininsha",id:"penanggung jawab koreksi",en:"corrective action owner",cat:"Inspection"},
+{jp:"是正承認",romaji:"zeisei shounin",id:"persetujuan tindakan korektif",en:"corrective action approval",cat:"Inspection"},
+{jp:"品質是正会議",romaji:"hinshitsu zeisei kaigi",id:"rapat koreksi kualitas",en:"quality corrective meeting",cat:"Inspection"},
+{jp:"監査対応記録",romaji:"kansa taiou kiroku",id:"catatan respon audit",en:"audit response record",cat:"Inspection"},
+{jp:"是正完了証明",romaji:"zeisei kanryou shoumei",id:"bukti koreksi selesai",en:"corrective completion evidence",cat:"Inspection"},
+{jp:"監査評価結果",romaji:"kansa hyouka kekka",id:"hasil evaluasi audit",en:"audit evaluation result",cat:"Inspection"},
+{jp:"品質文書体系",romaji:"hinshitsu bunsho taikei",id:"sistem dokumen mutu",en:"quality document system",cat:"Inspection"},
+{jp:"監査準備チェック",romaji:"kansa junbi chekku",id:"cek persiapan audit",en:"audit preparation check",cat:"Inspection"}
+
+   
    
 ];
