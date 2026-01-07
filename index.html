@@ -209,6 +209,33 @@ footer{
 <!-- DATA -->
 <script src="data.js"></script>
 
+<!-- VALIDASI DUPLIKAT JP -->
+<script>
+/* =========================
+   VALIDASI DUPLIKAT JP
+========================= */
+(function checkDuplicateJP(){
+  const seen = new Set();
+  const duplicates = [];
+
+  data.forEach(item=>{
+    if(seen.has(item.jp)){
+      duplicates.push(item.jp);
+    }else{
+      seen.add(item.jp);
+    }
+  });
+
+  if(duplicates.length){
+    console.warn("⚠️ DUPLIKAT JP TERDETEKSI:");
+    duplicates.forEach(jp=>console.warn(" -", jp));
+    console.warn("Total duplikat:", duplicates.length);
+  }else{
+    console.log("✅ VALIDASI OK: Tidak ada kosakata JP duplikat");
+  }
+})();
+</script>
+   
 <script>
 let lang="jp";
 
