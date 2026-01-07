@@ -59,7 +59,7 @@ const data = [
 {jp:"作業手順",romaji:"sagyou tejun",id:"prosedur kerja",en:"work procedure",cat:"Process"},
 {jp:"前工程",romaji:"zenkoutei",id:"proses sebelumnya",en:"previous process",cat:"Process"},
 {jp:"後工程",romaji:"koukoutei",id:"proses berikutnya",en:"next process",cat:"Process"},
-{jp:"段取り",romaji:"dandori",id:"persiapan kerja",en:"setup",cat:"Process"}
+{jp:"段取り",romaji:"dandori",id:"persiapan kerja",en:"setup",cat:"Process"},
 /* =================================================
    TAMBAHAN 100 KOSAKATA (TOTAL JADI 150)
 ================================================= */
@@ -137,7 +137,7 @@ const data = [
 {jp:"改善",romaji:"kaizen",id:"perbaikan berkelanjutan",en:"improvement",cat:"Process"},
 {jp:"標準作業",romaji:"hyoujun sagyou",id:"pekerjaan standar",en:"standard work",cat:"Process"},
 {jp:"作業指示",romaji:"sagyou shiji",id:"instruksi kerja",en:"work instruction",cat:"Process"},
-{jp:"確認",romaji:"kakunin",id:"konfirmasi",en:"confirmation",cat:"Process"}
+{jp:"確認",romaji:"kakunin",id:"konfirmasi",en:"confirmation",cat:"Process"},
 /* =================================================
    TAMBAHAN 100 KOSAKATA (LANJUTAN)
 ================================================= */
@@ -219,6 +219,94 @@ const data = [
 {jp:"組立",romaji:"kumitate",id:"perakitan",en:"assembly",cat:"Process"},
 {jp:"分解",romaji:"bunkai",id:"pembongkaran",en:"disassembly",cat:"Process"},
 {jp:"運搬",romaji:"unpan",id:"pemindahan",en:"transportation",cat:"Process"},
-{jp:"完了",romaji:"kanryou",id:"selesai",en:"completed",cat:"Process"}
+{jp:"完了",romaji:"kanryou",id:"selesai",en:"completed",cat:"Process"},
+/* =================================================
+   TAMBAHAN 100 KOSAKATA BARU (ANTI DUPLIKAT)
+================================================= */
+
+/* ===== Welding ===== */
+{jp:"溶接線",romaji:"yousetsu sen",id:"garis las",en:"weld line",cat:"Welding"},
+{jp:"溶接部",romaji:"yousetsu bu",id:"bagian las",en:"welded part",cat:"Welding"},
+{jp:"溶接金属",romaji:"yousetsu kinzoku",id:"logam las",en:"weld metal",cat:"Welding"},
+{jp:"溶融池",romaji:"youryuu chi",id:"kolam leleh",en:"molten pool",cat:"Welding"},
+{jp:"溶接欠陥率",romaji:"yousetsu kekkan ritsu",id:"tingkat cacat las",en:"weld defect rate",cat:"Welding"},
+{jp:"溶接継ぎ目",romaji:"yousetsu tsugime",id:"sambungan las",en:"weld seam",cat:"Welding"},
+{jp:"溶接角度",romaji:"yousetsu kakudo",id:"sudut pengelasan",en:"welding angle",cat:"Welding"},
+{jp:"溶接品質",romaji:"yousetsu hinshitsu",id:"kualitas pengelasan",en:"welding quality",cat:"Welding"},
+{jp:"溶接工程",romaji:"yousetsu koutei",id:"proses pengelasan",en:"welding process",cat:"Welding"},
+{jp:"溶接準備",romaji:"yousetsu junbi",id:"persiapan pengelasan",en:"welding preparation",cat:"Welding"},
+
+/* ===== Material ===== */
+{jp:"厚板",romaji:"atsu ita",id:"plat tebal",en:"thick plate",cat:"Material"},
+{jp:"薄板",romaji:"usu ita",id:"plat tipis",en:"thin plate",cat:"Material"},
+{jp:"丸棒",romaji:"marubou",id:"batang bulat",en:"round bar",cat:"Material"},
+{jp:"角材",romaji:"kakuzai",id:"batang kotak",en:"square bar",cat:"Material"},
+{jp:"材料特性",romaji:"zairyou tokusei",id:"karakteristik material",en:"material property",cat:"Material"},
+{jp:"耐摩耗性",romaji:"taimamousei",id:"tahan aus",en:"wear resistance",cat:"Material"},
+{jp:"延性",romaji:"ensei",id:"keuletan",en:"ductility",cat:"Material"},
+{jp:"脆性",romaji:"zeisei",id:"getas",en:"brittleness",cat:"Material"},
+{jp:"材料証明書",romaji:"zairyou shoumeisho",id:"sertifikat material",en:"material certificate",cat:"Material"},
+{jp:"規定材質",romaji:"kitei zaishitsu",id:"spesifikasi material",en:"specified material",cat:"Material"},
+
+/* ===== Equipment ===== */
+{jp:"操作装置",romaji:"sousa souchi",id:"perangkat operasi",en:"operating device",cat:"Equipment"},
+{jp:"自動停止",romaji:"jidou teishi",id:"berhenti otomatis",en:"automatic stop",cat:"Equipment"},
+{jp:"過負荷",romaji:"kafuka",id:"beban berlebih",en:"overload",cat:"Equipment"},
+{jp:"警報装置",romaji:"keihou souchi",id:"alat alarm",en:"alarm device",cat:"Equipment"},
+{jp:"制御スイッチ",romaji:"seigyo suitchi",id:"saklar kontrol",en:"control switch",cat:"Equipment"},
+{jp:"温度センサー",romaji:"ondo sensaa",id:"sensor suhu",en:"temperature sensor",cat:"Equipment"},
+{jp:"圧力センサー",romaji:"atsuryoku sensaa",id:"sensor tekanan",en:"pressure sensor",cat:"Equipment"},
+{jp:"駆動部",romaji:"kudoubu",id:"bagian penggerak",en:"drive unit",cat:"Equipment"},
+{jp:"装置点検",romaji:"souchi tenken",id:"pemeriksaan alat",en:"equipment inspection",cat:"Equipment"},
+{jp:"設備停止",romaji:"setsubi teishi",id:"penghentian mesin",en:"equipment shutdown",cat:"Equipment"},
+
+/* ===== Inspection (QC) ===== */
+{jp:"検査方法",romaji:"kensa houhou",id:"metode inspeksi",en:"inspection method",cat:"Inspection"},
+{jp:"測定値",romaji:"sokuteichi",id:"nilai ukur",en:"measured value",cat:"Inspection"},
+{jp:"判定基準",romaji:"hantei kijun",id:"kriteria penilaian",en:"judgement criteria",cat:"Inspection"},
+{jp:"合否判定",romaji:"gouhi hantei",id:"penentuan lulus/tidak",en:"pass/fail judgement",cat:"Inspection"},
+{jp:"検査証明",romaji:"kensa shoumei",id:"sertifikat inspeksi",en:"inspection certificate",cat:"Inspection"},
+{jp:"検査頻度",romaji:"kensa hindo",id:"frekuensi inspeksi",en:"inspection frequency",cat:"Inspection"},
+{jp:"検査対象",romaji:"kensa taishou",id:"objek inspeksi",en:"inspection target",cat:"Inspection"},
+{jp:"立会検査",romaji:"tachiai kensa",id:"inspeksi bersama",en:"witness inspection",cat:"Inspection"},
+{jp:"初品検査",romaji:"shohin kensa",id:"inspeksi produk awal",en:"first article inspection",cat:"Inspection"},
+{jp:"抜取検査",romaji:"nukitori kensa",id:"inspeksi sampling",en:"sampling inspection",cat:"Inspection"},
+
+/* ===== Defect (NG) ===== */
+{jp:"溶接不良",romaji:"yousetsu furyou",id:"las cacat",en:"poor welding",cat:"Defect"},
+{jp:"形状不良",romaji:"keijou furyou",id:"bentuk tidak sesuai",en:"shape defect",cat:"Defect"},
+{jp:"表面欠陥",romaji:"hyoumen kekkan",id:"cacat permukaan",en:"surface defect",cat:"Defect"},
+{jp:"過剰溶着",romaji:"kajou youchaku",id:"las berlebih",en:"excess weld",cat:"Defect"},
+{jp:"溶接不足",romaji:"yousetsu busoku",id:"las kurang",en:"insufficient weld",cat:"Defect"},
+{jp:"再加工",romaji:"saikakou",id:"proses ulang",en:"rework",cat:"Defect"},
+{jp:"補修",romaji:"hoshuu",id:"perbaikan",en:"repair",cat:"Defect"},
+{jp:"手直し",romaji:"tenaoshi",id:"perbaikan manual",en:"touch-up",cat:"Defect"},
+
+/* ===== Safety (K3) ===== */
+{jp:"安全確認",romaji:"anzen kakunin",id:"konfirmasi keselamatan",en:"safety check",cat:"Safety"},
+{jp:"作業許可",romaji:"sagyou kyoka",id:"izin kerja",en:"work permit",cat:"Safety"},
+{jp:"保護区域",romaji:"hogo kuiki",id:"area perlindungan",en:"protected area",cat:"Safety"},
+{jp:"危険区域",romaji:"kiken kuiki",id:"area berbahaya",en:"danger zone",cat:"Safety"},
+{jp:"感電防止",romaji:"kanden boushi",id:"pencegahan sengatan",en:"electric shock prevention",cat:"Safety"},
+{jp:"火花注意",romaji:"hibana chuui",id:"waspada percikan",en:"spark caution",cat:"Safety"},
+{jp:"高温注意",romaji:"kouon chuui",id:"waspada panas tinggi",en:"high temperature warning",cat:"Safety"},
+{jp:"安全教育",romaji:"anzen kyouiku",id:"pelatihan keselamatan",en:"safety training",cat:"Safety"},
+
+/* ===== Tools ===== */
+{jp:"測定ゲージ",romaji:"sokutei geeji",id:"gauge ukur",en:"measuring gauge",cat:"Tools"},
+{jp:"溶接治具",romaji:"yousetsu jigu",id:"jig las",en:"welding jig",cat:"Tools"},
+{jp:"固定具",romaji:"koteigu",id:"alat pengikat",en:"fixture",cat:"Tools"},
+{jp:"研磨工具",romaji:"kenma kougu",id:"alat poles",en:"polishing tool",cat:"Tools"},
+{jp:"切削工具",romaji:"sessaku kougu",id:"alat potong",en:"cutting tool",cat:"Tools"},
+{jp:"工具点検",romaji:"kougu tenken",id:"pemeriksaan alat",en:"tool inspection",cat:"Tools"},
+
+/* ===== Process ===== */
+{jp:"工程順",romaji:"koutei jun",id:"urutan proses",en:"process sequence",cat:"Process"},
+{jp:"工程変更",romaji:"koutei henkou",id:"perubahan proses",en:"process change",cat:"Process"},
+{jp:"作業計画",romaji:"sagyou keikaku",id:"rencana kerja",en:"work plan",cat:"Process"},
+{jp:"作業時間",romaji:"sagyou jikan",id:"waktu kerja",en:"working time",cat:"Process"},
+{jp:"標準時間",romaji:"hyoujun jikan",id:"waktu standar",en:"standard time",cat:"Process"},
+{jp:"進捗",romaji:"shinchoku",id:"kemajuan kerja",en:"progress",cat:"Process"},
+{jp:"完了報告",romaji:"kanryou houkoku",id:"laporan selesai",en:"completion report",cat:"Process"}
    
 ];
