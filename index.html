@@ -158,6 +158,39 @@ footer{
   font-size:13px;
   color:var(--muted);
 }
+
+/* =====================
+   PAGINATION
+===================== */
+.pagination{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  justify-content:center;
+  margin-top:30px;
+}
+
+.pagination button{
+  padding:8px 12px;
+  border-radius:8px;
+  border:1px solid #d1d5db;
+  background:var(--card);
+  color:var(--text);
+  cursor:pointer;
+  font-weight:600;
+}
+
+.pagination button.active{
+  background:var(--primary);
+  color:#fff;
+  border:none;
+}
+
+.pagination button:disabled{
+  opacity:.4;
+  cursor:not-allowed;
+}
+   
 </style>
 </head>
 
@@ -200,6 +233,8 @@ footer{
 </div>
 
 <div class="grid" id="list"></div>
+<div id="pagination" class="pagination"></div>
+   
 </div>
 
 <footer>
@@ -238,59 +273,105 @@ footer{
    
 <script>
 let lang="jp";
+let currentPage = 1;
+const itemsPerPage = 24;
 
-const list=document.getElementById("list");
-const search=document.getElementById("search");
-const category=document.getElementById("category");
-const sort=document.getElementById("sort");
+const list = document.getElementById("list");
+const search = document.getElementById("search");
+const category = document.getElementById("category");
+const sort = document.getElementById("sort");
+const pagination = document.getElementById("pagination");
 
-/* Highlight function */
+/* Highlight */
 function highlight(text, keyword){
   if(!keyword) return text;
   const regex = new RegExp(`(${keyword})`, "gi");
   return text.replace(regex, "<mark>$1</mark>");
 }
 
+function getFilteredData(){
+  let filtered = [...data];
+  const key = search.value.toLowerCase();
+
+  if(category.value !== "all"){
+    filtered = filtered.filter(d => d.cat === category.value);
+  }
+
+  filtered = filtered.filter(d =>
+    d[lang].toLowerCase().includes(key)
+  );
+
+  filtered.sort((a,b)=>a[sort.value].localeCompare(b[sort.value]));
+
+  return filtered;
+}
+
 function render(){
- list.innerHTML="";
- let filtered=[...data];
- const key=search.value.toLowerCase();
+  const filtered = getFilteredData();
+  const totalPages = Math.ceil(filtered.length / itemsPerPage);
+  if(currentPage > totalPages) currentPage = 1;
 
- if(category.value!=="all"){
-   filtered=filtered.filter(d=>d.cat===category.value);
- }
+  list.innerHTML = "";
 
- filtered=filtered.filter(d =>
-   d[lang].toLowerCase().includes(key)
- );
+  const start = (currentPage - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
 
- filtered.sort((a,b)=>a[sort.value].localeCompare(b[sort.value]));
+  filtered.slice(start, end).forEach(d=>{
+    list.innerHTML += `
+      <div class="card">
+        <h3>${highlight(d.jp, search.value)}</h3>
+        <div class="romaji">${d.romaji}</div>
+        <div class="meaning">${highlight(d[lang], search.value)}</div>
+        <div class="badge ${d.cat}">${d.cat}</div>
+      </div>
+    `;
+  });
 
- filtered.forEach(d=>{
-   list.innerHTML+=`
-   <div class="card">
-     <h3>${highlight(d.jp, key)}</h3>
-     <div class="romaji">${d.romaji}</div>
-     <div class="meaning">${highlight(d[lang], key)}</div>
-     <div class="badge ${d.cat}">${d.cat}</div>
-   </div>`;
- });
+  renderPagination(totalPages);
+}
+
+function renderPagination(totalPages){
+  pagination.innerHTML = "";
+  if(totalPages <= 1) return;
+
+  const prev = document.createElement("button");
+  prev.textContent = "◀";
+  prev.disabled = currentPage === 1;
+  prev.onclick = ()=>{ currentPage--; render(); };
+  pagination.appendChild(prev);
+
+  for(let i=1;i<=totalPages;i++){
+    const btn = document.createElement("button");
+    btn.textContent = i;
+    if(i === currentPage) btn.classList.add("active");
+    btn.onclick = ()=>{ currentPage = i; render(); };
+    pagination.appendChild(btn);
+  }
+
+  const next = document.createElement("button");
+  next.textContent = "▶";
+  next.disabled = currentPage === totalPages;
+  next.onclick = ()=>{ currentPage++; render(); };
+  pagination.appendChild(next);
 }
 
 function setLang(l){
- lang=l;
- document.querySelectorAll(".tools-right button").forEach(b=>b.classList.remove("active"));
- event.target.classList.add("active");
- render();
+  lang = l;
+  currentPage = 1;
+  document.querySelectorAll(".tools-right button")
+    .forEach(b=>b.classList.remove("active"));
+  event.target.classList.add("active");
+  render();
 }
 
 function toggleDark(){
- document.body.classList.toggle("dark");
+  document.body.classList.toggle("dark");
 }
 
-search.oninput=render;
-category.onchange=render;
-sort.onchange=render;
+/* Reset ke halaman 1 saat filter berubah */
+search.oninput = ()=>{ currentPage = 1; render(); };
+category.onchange = ()=>{ currentPage = 1; render(); };
+sort.onchange = ()=>{ currentPage = 1; render(); };
 
 render();
 </script>
