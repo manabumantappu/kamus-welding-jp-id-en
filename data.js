@@ -1202,6 +1202,350 @@ const data = [
 {jp:"進捗管理",romaji:"shinchoku kanri",id:"manajemen progres",en:"progress management",cat:"Process"},
 {jp:"成果測定",romaji:"seika sokutei",id:"pengukuran hasil",en:"performance measurement",cat:"Process"},
 {jp:"業務改善",romaji:"gyoumu kaizen",id:"perbaikan operasional",en:"business improvement",cat:"Process"},
-{jp:"管理レビュー",romaji:"kanri rebyuu",id:"tinjauan manajemen",en:"management review",cat:"Process"}
+{jp:"管理レビュー",romaji:"kanri rebyuu",id:"tinjauan manajemen",en:"management review",cat:"Process"},
+   
+ /* =================================================
+   ADVANCED INDUSTRIAL VOCAB – BATCH 6 (100)
+================================================= */
+
+/* ===== TPM / Reliability ===== */
+{jp:"平均故障間隔",romaji:"heikin koshou kankaku",id:"rata-rata waktu antar kerusakan",en:"mean time between failures",cat:"Equipment"},
+{jp:"平均修復時間",romaji:"heikin shuufuku jikan",id:"rata-rata waktu perbaikan",en:"mean time to repair",cat:"Equipment"},
+{jp:"信頼性工学",romaji:"shinraisei kougaku",id:"rekayasa keandalan",en:"reliability engineering",cat:"Equipment"},
+{jp:"信頼度",romaji:"shinraido",id:"tingkat keandalan",en:"reliability",cat:"Equipment"},
+{jp:"故障率",romaji:"koshouritsu",id:"laju kegagalan",en:"failure rate",cat:"Equipment"},
+{jp:"寿命分布",romaji:"jumyou bunpu",id:"distribusi umur pakai",en:"lifetime distribution",cat:"Equipment"},
+{jp:"予備品管理",romaji:"yobihin kanri",id:"manajemen suku cadang",en:"spare parts management",cat:"Equipment"},
+{jp:"保全KPI",romaji:"hozen KPI",id:"indikator kinerja perawatan",en:"maintenance KPI",cat:"Equipment"},
+{jp:"設備健全性",romaji:"setsubi kenzen sei",id:"kesehatan peralatan",en:"equipment health",cat:"Equipment"},
+{jp:"劣化診断",romaji:"rekka shindan",id:"diagnosis degradasi",en:"degradation diagnosis",cat:"Equipment"},
+
+/* ===== Maintenance Planning / Execution ===== */
+{jp:"長期保全計画",romaji:"chouki hozen keikaku",id:"rencana perawatan jangka panjang",en:"long-term maintenance plan",cat:"Equipment"},
+{jp:"短期保全計画",romaji:"tanki hozen keikaku",id:"rencana perawatan jangka pendek",en:"short-term maintenance plan",cat:"Equipment"},
+{jp:"保全作業指示書",romaji:"hozen sagyou shijisho",id:"instruksi kerja perawatan",en:"maintenance work instruction",cat:"Equipment"},
+{jp:"保全作業標準",romaji:"hozen sagyou hyoujun",id:"standar kerja perawatan",en:"maintenance work standard",cat:"Equipment"},
+{jp:"点検基準",romaji:"tenken kijun",id:"kriteria pemeriksaan",en:"inspection criteria",cat:"Equipment"},
+{jp:"点検記録表",romaji:"tenken kirokuhyou",id:"lembar catatan pemeriksaan",en:"inspection record sheet",cat:"Equipment"},
+{jp:"整備履歴管理",romaji:"seibi rireki kanri",id:"manajemen riwayat servis",en:"service history management",cat:"Equipment"},
+{jp:"修理計画",romaji:"shuuri keikaku",id:"rencana perbaikan",en:"repair plan",cat:"Equipment"},
+
+/* ===== Safety Management System ===== */
+{jp:"安全マネジメントシステム",romaji:"anzen manejimento shisutemu",id:"sistem manajemen keselamatan",en:"safety management system",cat:"Safety"},
+{jp:"労働安全衛生方針",romaji:"roudou anzen eisei houshin",id:"kebijakan K3",en:"occupational health and safety policy",cat:"Safety"},
+{jp:"安全目標",romaji:"anzen mokuhyou",id:"target keselamatan",en:"safety objective",cat:"Safety"},
+{jp:"危険源管理",romaji:"kiken gen kanri",id:"pengendalian sumber bahaya",en:"hazard control",cat:"Safety"},
+{jp:"安全パフォーマンス",romaji:"anzen pafo-mansu",id:"kinerja keselamatan",en:"safety performance",cat:"Safety"},
+{jp:"事故調査",romaji:"jiko chousa",id:"investigasi kecelakaan",en:"accident investigation",cat:"Safety"},
+{jp:"ヒヤリハット",romaji:"hiyari hatto",id:"nyaris celaka",en:"near miss",cat:"Safety"},
+{jp:"安全是正計画",romaji:"anzen zeisei keikaku",id:"rencana koreksi keselamatan",en:"safety corrective plan",cat:"Safety"},
+
+/* ===== Compliance / Audit ===== */
+{jp:"法令遵守",romaji:"hourei junshu",id:"kepatuhan hukum",en:"legal compliance",cat:"Inspection"},
+{jp:"内部規程",romaji:"naibu kitei",id:"peraturan internal",en:"internal regulation",cat:"Inspection"},
+{jp:"遵守状況確認",romaji:"junshu joukyou kakunin",id:"cek kepatuhan",en:"compliance status check",cat:"Inspection"},
+{jp:"監査計画書",romaji:"kansa keikakusho",id:"dokumen rencana audit",en:"audit plan document",cat:"Inspection"},
+{jp:"監査証跡",romaji:"kansa shouseki",id:"jejak audit",en:"audit trail",cat:"Inspection"},
+{jp:"監査是正",romaji:"kansa zeisei",id:"koreksi audit",en:"audit corrective action",cat:"Inspection"},
+{jp:"遵法監査",romaji:"junpou kansa",id:"audit kepatuhan hukum",en:"compliance audit",cat:"Inspection"},
+{jp:"是正完了報告",romaji:"zeisei kanryou houkoku",id:"laporan selesai koreksi",en:"corrective completion report",cat:"Inspection"},
+
+/* ===== Operations / Continuity ===== */
+{jp:"事業継続計画",romaji:"jigyou keizoku keikaku",id:"rencana keberlanjutan bisnis",en:"business continuity plan",cat:"Process"},
+{jp:"災害対応計画",romaji:"saigai taiou keikaku",id:"rencana tanggap bencana",en:"disaster response plan",cat:"Process"},
+{jp:"緊急対応手順",romaji:"kinkyuu taiou tejun",id:"prosedur tanggap darurat",en:"emergency response procedure",cat:"Process"},
+{jp:"操業継続",romaji:"sougyou keizoku",id:"kelangsungan operasi",en:"operational continuity",cat:"Process"},
+{jp:"復旧優先順位",romaji:"fukkyuu yuusen juni",id:"prioritas pemulihan",en:"recovery priority",cat:"Process"},
+{jp:"代替工程",romaji:"daitai koutei",id:"proses alternatif",en:"alternative process",cat:"Process"},
+{jp:"供給リスク",romaji:"kyoukyuu risuku",id:"risiko pasokan",en:"supply risk",cat:"Process"},
+{jp:"安定供給",romaji:"antei kyoukyuu",id:"pasokan stabil",en:"stable supply",cat:"Process"},
+
+/* ===== Data / Digitalization ===== */
+{jp:"設備データ収集",romaji:"setsubi deeta shuushuu",id:"pengumpulan data peralatan",en:"equipment data collection",cat:"Process"},
+{jp:"稼働データ分析",romaji:"kadou deeta bunseki",id:"analisis data operasi",en:"operation data analysis",cat:"Process"},
+{jp:"予知保全システム",romaji:"yochi hozen shisutemu",id:"sistem perawatan prediktif",en:"predictive maintenance system",cat:"Process"},
+{jp:"データ可視化",romaji:"deeta kashika",id:"visualisasi data",en:"data visualization",cat:"Process"},
+{jp:"異常アラート",romaji:"ijou ara-to",id:"peringatan abnormal",en:"abnormal alert",cat:"Process"},
+{jp:"ダッシュボード",romaji:"dasshuboodo",id:"papan dashboard",en:"dashboard",cat:"Process"},
+
+/* =================================================
+   ADVANCED INDUSTRIAL VOCAB – BATCH 7 (100)
+   Energy / Environment / ESG / Sustainability
+================================================= */
+
+/* ===== Energy Management ===== */
+{jp:"エネルギー管理",romaji:"enerugii kanri",id:"manajemen energi",en:"energy management",cat:"Process"},
+{jp:"エネルギー使用量",romaji:"enerugii shiyouryou",id:"konsumsi energi",en:"energy consumption",cat:"Process"},
+{jp:"省エネルギー",romaji:"shou enerugii",id:"penghematan energi",en:"energy saving",cat:"Process"},
+{jp:"電力ピーク管理",romaji:"denryoku piiku kanri",id:"manajemen beban puncak listrik",en:"electric power peak control",cat:"Process"},
+{jp:"エネルギー効率",romaji:"enerugii kouritsu",id:"efisiensi energi",en:"energy efficiency",cat:"Process"},
+{jp:"使用量モニタリング",romaji:"shiyouryou monitaringu",id:"pemantauan konsumsi",en:"consumption monitoring",cat:"Process"},
+{jp:"エネルギー原単位",romaji:"enerugii gentanni",id:"intensitas energi",en:"energy intensity",cat:"Process"},
+{jp:"エネルギー改善計画",romaji:"enerugii kaizen keikaku",id:"rencana perbaikan energi",en:"energy improvement plan",cat:"Process"},
+
+/* ===== Environment / ISO 14001 ===== */
+{jp:"環境マネジメントシステム",romaji:"kankyou manejimento shisutemu",id:"sistem manajemen lingkungan",en:"environmental management system",cat:"Safety"},
+{jp:"環境方針",romaji:"kankyou houshin",id:"kebijakan lingkungan",en:"environmental policy",cat:"Safety"},
+{jp:"環境目標",romaji:"kankyou mokuhyou",id:"target lingkungan",en:"environmental objective",cat:"Safety"},
+{jp:"環境影響評価",romaji:"kankyou eikyou hyouka",id:"penilaian dampak lingkungan",en:"environmental impact assessment",cat:"Safety"},
+{jp:"環境法令遵守",romaji:"kankyou hourei junshu",id:"kepatuhan hukum lingkungan",en:"environmental legal compliance",cat:"Safety"},
+{jp:"環境監査",romaji:"kankyou kansa",id:"audit lingkungan",en:"environmental audit",cat:"Safety"},
+{jp:"是正予防処置",romaji:"zeisei yobou shochi",id:"tindakan korektif & pencegahan",en:"corrective and preventive action",cat:"Safety"},
+{jp:"環境改善活動",romaji:"kankyou kaizen katsudou",id:"kegiatan perbaikan lingkungan",en:"environmental improvement activity",cat:"Safety"},
+
+/* ===== Waste / Emission ===== */
+{jp:"廃棄物管理",romaji:"haikibutsu kanri",id:"manajemen limbah",en:"waste management",cat:"Safety"},
+{jp:"産業廃棄物",romaji:"sangyou haikibutsu",id:"limbah industri",en:"industrial waste",cat:"Safety"},
+{jp:"分別回収",romaji:"bunbetsu kaishuu",id:"pengumpulan terpilah",en:"waste segregation",cat:"Safety"},
+{jp:"再資源化",romaji:"saishigenka",id:"daur ulang",en:"resource recycling",cat:"Safety"},
+{jp:"排出量管理",romaji:"haishutsuryou kanri",id:"manajemen emisi",en:"emission control",cat:"Safety"},
+{jp:"温室効果ガス",romaji:"onshitsu kouka gasu",id:"gas rumah kaca",en:"greenhouse gas",cat:"Safety"},
+{jp:"CO2排出量",romaji:"CO2 haishutsuryou",id:"emisi CO2",en:"CO2 emission",cat:"Safety"},
+{jp:"削減目標",romaji:"sakugen mokuhyou",id:"target pengurangan",en:"reduction target",cat:"Safety"},
+
+/* ===== ESG ===== */
+{jp:"ESG経営",romaji:"ESG keiei",id:"manajemen ESG",en:"ESG management",cat:"Process"},
+{jp:"環境配慮",romaji:"kankyou hairyo",id:"kepedulian lingkungan",en:"environmental consideration",cat:"Process"},
+{jp:"社会的責任",romaji:"shakaiteki sekinin",id:"tanggung jawab sosial",en:"social responsibility",cat:"Process"},
+{jp:"企業統治",romaji:"kigyou touchi",id:"tata kelola perusahaan",en:"corporate governance",cat:"Process"},
+{jp:"コンプライアンス",romaji:"konpuraiansu",id:"kepatuhan",en:"compliance",cat:"Process"},
+{jp:"情報開示",romaji:"jouhou kaiji",id:"keterbukaan informasi",en:"information disclosure",cat:"Process"},
+{jp:"持続可能性",romaji:"jizoku kanousei",id:"keberlanjutan",en:"sustainability",cat:"Process"},
+{jp:"ESG評価",romaji:"ESG hyouka",id:"penilaian ESG",en:"ESG evaluation",cat:"Process"},
+
+/* ===== Sustainability / CSR ===== */
+{jp:"持続可能な開発",romaji:"jizoku kanou na kaihatsu",id:"pembangunan berkelanjutan",en:"sustainable development",cat:"Process"},
+{jp:"CSR活動",romaji:"CSR katsudou",id:"kegiatan CSR",en:"corporate social responsibility activity",cat:"Process"},
+{jp:"地域貢献",romaji:"chiiki kouken",id:"kontribusi masyarakat",en:"community contribution",cat:"Process"},
+{jp:"環境配慮設計",romaji:"kankyou hairyo sekkei",id:"desain ramah lingkungan",en:"eco-friendly design",cat:"Process"},
+{jp:"サプライチェーン管理",romaji:"sapurai cheen kanri",id:"manajemen rantai pasok",en:"supply chain management",cat:"Process"},
+{jp:"責任ある調達",romaji:"sekinin aru choutatsu",id:"pengadaan bertanggung jawab",en:"responsible sourcing",cat:"Process"},
+{jp:"持続可能調達",romaji:"jizoku kanou choutatsu",id:"pengadaan berkelanjutan",en:"sustainable procurement",cat:"Process"},
+{jp:"環境報告書",romaji:"kankyou houkokusho",id:"laporan lingkungan",en:"environmental report",cat:"Process"},
+
+/* ===== Risk / Governance ===== */
+{jp:"企業リスク管理",romaji:"kigyou risuku kanri",id:"manajemen risiko perusahaan",en:"enterprise risk management",cat:"Process"},
+{jp:"事業リスク評価",romaji:"jigyou risuku hyouka",id:"penilaian risiko bisnis",en:"business risk assessment",cat:"Process"},
+{jp:"不正防止",romaji:"fusei boushi",id:"pencegahan kecurangan",en:"fraud prevention",cat:"Process"},
+{jp:"内部統制",romaji:"naibu tousei",id:"pengendalian internal",en:"internal control",cat:"Process"},
+{jp:"ガバナンス体制",romaji:"gabanansu taisei",id:"struktur tata kelola",en:"governance structure",cat:"Process"},
+{jp:"監督責任",romaji:"kantoku sekinin",id:"tanggung jawab pengawasan",en:"oversight responsibility",cat:"Process"},
+{jp:"倫理規範",romaji:"rinri kihan",id:"kode etik",en:"code of ethics",cat:"Process"},
+{jp:"是正措置管理",romaji:"zeisei sochi kanri",id:"manajemen tindakan korektif",en:"corrective action management",cat:"Process"},
+
+ /* =================================================
+   ADVANCED INDUSTRIAL VOCAB – BATCH 8 (100)
+   Digital Manufacturing / IoT / Smart Factory / DX
+================================================= */
+
+/* ===== Digital Manufacturing ===== */
+{jp:"デジタル製造",romaji:"dejitaru seizou",id:"manufaktur digital",en:"digital manufacturing",cat:"Process"},
+{jp:"スマートファクトリー",romaji:"sumaato fakutorii",id:"pabrik pintar",en:"smart factory",cat:"Process"},
+{jp:"製造DX",romaji:"seizou DX",id:"transformasi digital manufaktur",en:"manufacturing DX",cat:"Process"},
+{jp:"デジタルツイン",romaji:"dejitaru tsuin",id:"kembaran digital",en:"digital twin",cat:"Process"},
+{jp:"工程デジタル化",romaji:"koutei dejitaru ka",id:"digitalisasi proses",en:"process digitalization",cat:"Process"},
+{jp:"仮想検証",romaji:"kasou kenshou",id:"verifikasi virtual",en:"virtual verification",cat:"Process"},
+{jp:"生産シミュレーション",romaji:"seisan shimyureeshon",id:"simulasi produksi",en:"production simulation",cat:"Process"},
+{jp:"設備仮想化",romaji:"setsubi kasou ka",id:"virtualisasi peralatan",en:"equipment virtualization",cat:"Process"},
+
+/* ===== IoT / Sensors ===== */
+{jp:"産業用IoT",romaji:"sangyou you IoT",id:"IoT industri",en:"industrial IoT",cat:"Equipment"},
+{jp:"センサーデータ",romaji:"sensaa deeta",id:"data sensor",en:"sensor data",cat:"Equipment"},
+{jp:"リアルタイム監視",romaji:"riarutaimu kanshi",id:"pemantauan waktu nyata",en:"real-time monitoring",cat:"Equipment"},
+{jp:"稼働状態取得",romaji:"kadou joutai shutoku",id:"pengambilan status operasi",en:"operation status acquisition",cat:"Equipment"},
+{jp:"異常検知アルゴリズム",romaji:"ijou kenchi arugorizumu",id:"algoritma deteksi abnormal",en:"anomaly detection algorithm",cat:"Equipment"},
+{jp:"センサー校正",romaji:"sensaa kousei",id:"kalibrasi sensor",en:"sensor calibration",cat:"Equipment"},
+{jp:"データ収集基盤",romaji:"deeta shuushuu kiban",id:"platform pengumpulan data",en:"data collection platform",cat:"Equipment"},
+{jp:"エッジデバイス",romaji:"ejji debaisu",id:"perangkat edge",en:"edge device",cat:"Equipment"},
+
+/* ===== Automation / Robotics ===== */
+{jp:"自動化設備",romaji:"jidouka setsubi",id:"peralatan otomatis",en:"automation equipment",cat:"Equipment"},
+{jp:"協働ロボット",romaji:"kyoudou robotto",id:"robot kolaboratif",en:"collaborative robot",cat:"Equipment"},
+{jp:"ロボットティーチング",romaji:"robotto tiichingu",id:"pengajaran robot",en:"robot teaching",cat:"Equipment"},
+{jp:"自動搬送",romaji:"jidou hansou",id:"transportasi otomatis",en:"automated transport",cat:"Equipment"},
+{jp:"AGV",romaji:"AGV",id:"kendaraan berpemandu otomatis",en:"automated guided vehicle",cat:"Equipment"},
+{jp:"制御ロジック",romaji:"seigyo rojikku",id:"logika kontrol",en:"control logic",cat:"Equipment"},
+{jp:"自動停止機能",romaji:"jidou teishi kinou",id:"fungsi berhenti otomatis",en:"automatic stop function",cat:"Equipment"},
+{jp:"安全インターロック",romaji:"anzen intarokku",id:"interlock keselamatan",en:"safety interlock",cat:"Equipment"},
+
+/* ===== Data / Analytics ===== */
+{jp:"ビッグデータ分析",romaji:"biggu deeta bunseki",id:"analisis big data",en:"big data analytics",cat:"Process"},
+{jp:"製造データ解析",romaji:"seizou deeta kaiseki",id:"analisis data manufaktur",en:"manufacturing data analysis",cat:"Process"},
+{jp:"予測分析",romaji:"yosoku bunseki",id:"analisis prediktif",en:"predictive analytics",cat:"Process"},
+{jp:"品質データ連携",romaji:"hinshitsu deeta renkei",id:"integrasi data kualitas",en:"quality data integration",cat:"Process"},
+{jp:"トレーサビリティシステム",romaji:"toreesabiriti shisutemu",id:"sistem ketertelusuran",en:"traceability system",cat:"Process"},
+{jp:"データクレンジング",romaji:"deeta kurenjingu",id:"pembersihan data",en:"data cleansing",cat:"Process"},
+{jp:"可視化ダッシュボード",romaji:"kashika dasshuboodo",id:"dashboard visualisasi",en:"visualization dashboard",cat:"Process"},
+{jp:"KPIモニタリング",romaji:"KPI monitaringu",id:"pemantauan KPI",en:"KPI monitoring",cat:"Process"},
+
+/* ===== Systems / IT ===== */
+{jp:"製造実行システム",romaji:"seizou jikkou shisutemu",id:"sistem eksekusi manufaktur",en:"manufacturing execution system",cat:"Process"},
+{jp:"MES連携",romaji:"MES renkei",id:"integrasi MES",en:"MES integration",cat:"Process"},
+{jp:"ERP連携",romaji:"ERP renkei",id:"integrasi ERP",en:"ERP integration",cat:"Process"},
+{jp:"生産計画最適化",romaji:"seisan keikaku saiteki ka",id:"optimasi rencana produksi",en:"production planning optimization",cat:"Process"},
+{jp:"データ標準化",romaji:"deeta hyoujunka",id:"standarisasi data",en:"data standardization",cat:"Process"},
+{jp:"システム可用性",romaji:"shisutemu kayousei",id:"ketersediaan sistem",en:"system availability",cat:"Process"},
+{jp:"障害対応",romaji:"shougai taiou",id:"penanganan gangguan sistem",en:"system incident response",cat:"Process"},
+{jp:"バックアップ管理",romaji:"bakkuappu kanri",id:"manajemen pencadangan",en:"backup management",cat:"Process"},
+
+/* ===== Cyber / Security ===== */
+{jp:"サイバーセキュリティ",romaji:"saibaa sekyuriti",id:"keamanan siber",en:"cybersecurity",cat:"Safety"},
+{jp:"アクセス制御",romaji:"akusesu seigyo",id:"kontrol akses",en:"access control",cat:"Safety"},
+{jp:"認証管理",romaji:"ninshou kanri",id:"manajemen autentikasi",en:"authentication management",cat:"Safety"},
+{jp:"脆弱性対策",romaji:"zeijakusei taisaku",id:"mitigasi kerentanan",en:"vulnerability mitigation",cat:"Safety"},
+{jp:"ログ管理",romaji:"rogu kanri",id:"manajemen log",en:"log management",cat:"Safety"},
+{jp:"不正アクセス",romaji:"fusei akusesu",id:"akses tidak sah",en:"unauthorized access",cat:"Safety"},
+{jp:"セキュリティ監査",romaji:"sekyuriti kansa",id:"audit keamanan",en:"security audit",cat:"Safety"},
+{jp:"インシデント対応",romaji:"inshidento taiou",id:"penanganan insiden",en:"incident response",cat:"Safety"},
+
+/* ===== DX Governance ===== */
+{jp:"DX戦略",romaji:"DX senryaku",id:"strategi DX",en:"DX strategy",cat:"Process"},
+{jp:"データガバナンス",romaji:"deeta gabanansu",id:"tata kelola data",en:"data governance",cat:"Process"},
+{jp:"IT統制",romaji:"IT tousei",id:"pengendalian TI",en:"IT control",cat:"Process"},
+{jp:"変更影響分析",romaji:"henkou eikyou bunseki",id:"analisis dampak perubahan",en:"change impact analysis",cat:"Process"},
+{jp:"運用標準",romaji:"unyou hyoujun",id:"standar operasional TI",en:"IT operation standard",cat:"Process"},
+{jp:"展開計画",romaji:"tenkai keikaku",id:"rencana implementasi",en:"deployment plan",cat:"Process"},
+
+ /* =================================================
+   ADVANCED INDUSTRIAL VOCAB – BATCH 9 (100)
+   AI / ML / Vision Inspection / Autonomous Factory
+================================================= */
+
+/* ===== AI / Machine Learning ===== */
+{jp:"人工知能",romaji:"jinkou chinou",id:"kecerdasan buatan",en:"artificial intelligence",cat:"Process"},
+{jp:"機械学習",romaji:"kikai gakushuu",id:"pembelajaran mesin",en:"machine learning",cat:"Process"},
+{jp:"深層学習",romaji:"shinsou gakushuu",id:"pembelajaran mendalam",en:"deep learning",cat:"Process"},
+{jp:"学習データ",romaji:"gakushuu deeta",id:"data pelatihan",en:"training data",cat:"Process"},
+{jp:"教師あり学習",romaji:"kyoushi ari gakushuu",id:"pembelajaran terawasi",en:"supervised learning",cat:"Process"},
+{jp:"教師なし学習",romaji:"kyoushi nashi gakushuu",id:"pembelajaran tak terawasi",en:"unsupervised learning",cat:"Process"},
+{jp:"モデル精度",romaji:"moderu seido",id:"akurasi model",en:"model accuracy",cat:"Process"},
+{jp:"推論処理",romaji:"suiron shori",id:"proses inferensi",en:"inference processing",cat:"Process"},
+
+/* ===== Vision Inspection ===== */
+{jp:"画像検査",romaji:"gazou kensa",id:"inspeksi visual otomatis",en:"vision inspection",cat:"Inspection"},
+{jp:"外観検査AI",romaji:"gaikan kensa AI",id:"AI inspeksi tampilan",en:"AI visual inspection",cat:"Inspection"},
+{jp:"欠陥検出",romaji:"kekkan kenshutsu",id:"deteksi cacat",en:"defect detection",cat:"Inspection"},
+{jp:"画像処理",romaji:"gazou shori",id:"pemrosesan citra",en:"image processing",cat:"Inspection"},
+{jp:"特徴量抽出",romaji:"tokuchouryou chushutsu",id:"ekstraksi fitur",en:"feature extraction",cat:"Inspection"},
+{jp:"誤検出",romaji:"gokenshutsu",id:"deteksi salah",en:"false detection",cat:"Inspection"},
+{jp:"検出率",romaji:"kenshutsuritsu",id:"tingkat deteksi",en:"detection rate",cat:"Inspection"},
+{jp:"検査自動化",romaji:"kensa jidouka",id:"otomatisasi inspeksi",en:"inspection automation",cat:"Inspection"},
+
+/* ===== Autonomous Factory ===== */
+{jp:"自律型工場",romaji:"jiritsu gata koujou",id:"pabrik otonom",en:"autonomous factory",cat:"Process"},
+{jp:"自己最適化",romaji:"jiko saiteki ka",id:"optimasi mandiri",en:"self-optimization",cat:"Process"},
+{jp:"自動判断",romaji:"jidou handan",id:"keputusan otomatis",en:"automatic decision making",cat:"Process"},
+{jp:"無人運転",romaji:"mujin unten",id:"operasi tanpa operator",en:"unmanned operation",cat:"Process"},
+{jp:"自律制御",romaji:"jiritsu seigyo",id:"kontrol otonom",en:"autonomous control",cat:"Process"},
+{jp:"フィードバック制御",romaji:"fiidobakku seigyo",id:"kontrol umpan balik",en:"feedback control",cat:"Process"},
+{jp:"自己学習",romaji:"jiko gakushuu",id:"pembelajaran mandiri",en:"self-learning",cat:"Process"},
+{jp:"自動最適化",romaji:"jidou saiteki ka",id:"optimasi otomatis",en:"automatic optimization",cat:"Process"},
+
+/* ===== Advanced Quality Automation ===== */
+{jp:"品質予測",romaji:"hinshitsu yosoku",id:"prediksi kualitas",en:"quality prediction",cat:"Inspection"},
+{jp:"異常予測",romaji:"ijou yosoku",id:"prediksi abnormal",en:"anomaly prediction",cat:"Inspection"},
+{jp:"品質AIモデル",romaji:"hinshitsu AI moderu",id:"model AI kualitas",en:"quality AI model",cat:"Inspection"},
+{jp:"リアルタイム品質監視",romaji:"riarutaimu hinshitsu kanshi",id:"monitor kualitas real-time",en:"real-time quality monitoring",cat:"Inspection"},
+{jp:"品質自動判定",romaji:"hinshitsu jidou hantei",id:"penilaian kualitas otomatis",en:"automatic quality judgement",cat:"Inspection"},
+{jp:"工程異常検知",romaji:"koutei ijou kenchi",id:"deteksi abnormal proses",en:"process anomaly detection",cat:"Inspection"},
+{jp:"品質ばらつき抑制",romaji:"hinshitsu baratsuki yokusei",id:"pengendalian variasi kualitas",en:"quality variation control",cat:"Inspection"},
+{jp:"品質フィードバック",romaji:"hinshitsu fiidobakku",id:"umpan balik kualitas",en:"quality feedback",cat:"Inspection"},
+
+/* ===== Robotics & Automation Intelligence ===== */
+{jp:"知能ロボット",romaji:"chinou robotto",id:"robot cerdas",en:"intelligent robot",cat:"Equipment"},
+{jp:"ロボット認識",romaji:"robotto ninshiki",id:"pengenalan robot",en:"robot perception",cat:"Equipment"},
+{jp:"経路計画",romaji:"keiro keikaku",id:"perencanaan jalur",en:"path planning",cat:"Equipment"},
+{jp:"衝突回避",romaji:"shoutotsu kaihi",id:"penghindaran tabrakan",en:"collision avoidance",cat:"Equipment"},
+{jp:"協調制御",romaji:"kyouchou seigyo",id:"kontrol terkoordinasi",en:"cooperative control",cat:"Equipment"},
+{jp:"自律移動ロボット",romaji:"jiritsu idou robotto",id:"robot bergerak otonom",en:"autonomous mobile robot",cat:"Equipment"},
+{jp:"ロボット安全AI",romaji:"robotto anzen AI",id:"AI keselamatan robot",en:"robot safety AI",cat:"Equipment"},
+{jp:"ロボット最適動作",romaji:"robotto saiteki dousa",id:"gerakan optimal robot",en:"robot motion optimization",cat:"Equipment"},
+
+/* ===== AI Governance / Ethics ===== */
+{jp:"AIガバナンス",romaji:"AI gabanansu",id:"tata kelola AI",en:"AI governance",cat:"Process"},
+{jp:"AI倫理",romaji:"AI rinri",id:"etika AI",en:"AI ethics",cat:"Process"},
+{jp:"モデル説明性",romaji:"moderu setsumeisei",id:"keterjelasan model",en:"model explainability",cat:"Process"},
+{jp:"アルゴリズム偏り",romaji:"arugorizumu katayori",id:"bias algoritma",en:"algorithm bias",cat:"Process"},
+{jp:"データ品質管理",romaji:"deeta hinshitsu kanri",id:"manajemen kualitas data",en:"data quality management",cat:"Process"},
+{jp:"AIリスク管理",romaji:"AI risuku kanri",id:"manajemen risiko AI",en:"AI risk management",cat:"Process"},
+{jp:"モデル監査",romaji:"moderu kansa",id:"audit model",en:"model audit",cat:"Process"},
+{jp:"AI導入評価",romaji:"AI dounyuu hyouka",id:"evaluasi implementasi AI",en:"AI implementation evaluation",cat:"Process"},
+
+/* ===== Smart Factory Operations ===== */
+{jp:"自動運転ライン",romaji:"jidou unten rain",id:"lini otomatis penuh",en:"fully automated line",cat:"Process"},
+{jp:"柔軟生産",romaji:"juunan seisan",id:"produksi fleksibel",en:"flexible manufacturing",cat:"Process"},
+{jp:"需要予測",romaji:"juyou yosoku",id:"prediksi permintaan",en:"demand forecasting",cat:"Process"},
+{jp:"生産最適配分",romaji:"seisan saiteki haibun",id:"alokasi produksi optimal",en:"optimal production allocation",cat:"Process"},
+{jp:"在庫最適化",romaji:"zaiko saiteki ka",id:"optimasi persediaan",en:"inventory optimization",cat:"Process"},
+{jp:"自動計画立案",romaji:"jidou keikaku ritsuan",id:"perencanaan otomatis",en:"automatic planning",cat:"Process"},
+{jp:"スマート保全",romaji:"sumaato hozen",id:"perawatan pintar",en:"smart maintenance",cat:"Process"},
+{jp:"次世代工場",romaji:"jisedai koujou",id:"pabrik generasi berikutnya",en:"next-generation factory",cat:"Process"},
+   
+ /* =================================================
+   ADVANCED INDUSTRIAL VOCAB – BATCH 10 (100)
+   Global Manufacturing / Digital Supply Chain
+================================================= */
+
+/* ===== Global Manufacturing ===== */
+{jp:"グローバル製造",romaji:"guroobaru seizou",id:"manufaktur global",en:"global manufacturing",cat:"Process"},
+{jp:"海外拠点",romaji:"kaigai kyoten",id:"fasilitas luar negeri",en:"overseas site",cat:"Process"},
+{jp:"多拠点生産",romaji:"takyo ten seisan",id:"produksi multi lokasi",en:"multi-site production",cat:"Process"},
+{jp:"国際分業",romaji:"kokusai bungyou",id:"pembagian kerja internasional",en:"international division of labor",cat:"Process"},
+{jp:"製造最適配置",romaji:"seizou saiteki haichi",id:"penempatan manufaktur optimal",en:"optimal manufacturing allocation",cat:"Process"},
+{jp:"生産標準統一",romaji:"seisan hyoujun touitsu",id:"penyeragaman standar produksi",en:"production standard harmonization",cat:"Process"},
+{jp:"品質標準統合",romaji:"hinshitsu hyoujun tougou",id:"integrasi standar kualitas",en:"quality standard integration",cat:"Process"},
+{jp:"グローバル展開",romaji:"guroobaru tenkai",id:"ekspansi global",en:"global deployment",cat:"Process"},
+
+/* ===== Digital Supply Chain ===== */
+{jp:"デジタルサプライチェーン",romaji:"dejitaru sapurai cheen",id:"rantai pasok digital",en:"digital supply chain",cat:"Process"},
+{jp:"需要連動生産",romaji:"juyou rendou seisan",id:"produksi berbasis permintaan",en:"demand-driven production",cat:"Process"},
+{jp:"供給計画最適化",romaji:"kyoukyuu keikaku saiteki ka",id:"optimasi perencanaan pasokan",en:"supply planning optimization",cat:"Process"},
+{jp:"在庫可視化",romaji:"zaiko kashika",id:"visualisasi stok",en:"inventory visibility",cat:"Process"},
+{jp:"サプライリスク管理",romaji:"sapurai risuku kanri",id:"manajemen risiko pasokan",en:"supply risk management",cat:"Process"},
+{jp:"サプライチェーン最適化",romaji:"sapurai cheen saiteki ka",id:"optimasi rantai pasok",en:"supply chain optimization",cat:"Process"},
+{jp:"調達デジタル化",romaji:"choutatsu dejitaru ka",id:"digitalisasi pengadaan",en:"procurement digitalization",cat:"Process"},
+{jp:"物流最適化",romaji:"butsuryuu saiteki ka",id:"optimasi logistik",en:"logistics optimization",cat:"Process"},
+
+/* ===== International Standard / Compliance ===== */
+{jp:"国際品質基準",romaji:"kokusai hinshitsu kijun",id:"standar kualitas internasional",en:"international quality standard",cat:"Inspection"},
+{jp:"規制要件遵守",romaji:"kisei youken junshu",id:"kepatuhan persyaratan regulasi",en:"regulatory compliance",cat:"Inspection"},
+{jp:"輸出管理",romaji:"yushutsu kanri",id:"manajemen ekspor",en:"export control",cat:"Inspection"},
+{jp:"輸入規制",romaji:"yunyuu kisei",id:"regulasi impor",en:"import regulation",cat:"Inspection"},
+{jp:"認証取得",romaji:"ninshou shutoku",id:"perolehan sertifikasi",en:"certification acquisition",cat:"Inspection"},
+{jp:"第三者監査",romaji:"daisansha kansa",id:"audit pihak ketiga",en:"third-party audit",cat:"Inspection"},
+{jp:"適合宣言",romaji:"tekigou sengen",id:"deklarasi kesesuaian",en:"declaration of conformity",cat:"Inspection"},
+{jp:"国際監査対応",romaji:"kokusai kansa taiou",id:"penanganan audit internasional",en:"international audit 대응",cat:"Inspection"},
+
+/* ===== Enterprise System ===== */
+{jp:"全社最適化",romaji:"zensha saiteki ka",id:"optimasi tingkat perusahaan",en:"enterprise optimization",cat:"Process"},
+{jp:"統合管理システム",romaji:"tougou kanri shisutemu",id:"sistem manajemen terintegrasi",en:"integrated management system",cat:"Process"},
+{jp:"基幹システム",romaji:"kikan shisutemu",id:"sistem inti perusahaan",en:"core system",cat:"Process"},
+{jp:"全社データ連携",romaji:"zensha deeta renkei",id:"integrasi data perusahaan",en:"enterprise data integration",cat:"Process"},
+{jp:"マスターデータ管理",romaji:"masutaa deeta kanri",id:"manajemen master data",en:"master data management",cat:"Process"},
+{jp:"業務プロセス統合",romaji:"gyoumu purosesu tougou",id:"integrasi proses bisnis",en:"business process integration",cat:"Process"},
+{jp:"ITアーキテクチャ",romaji:"IT aakitekucha",id:"arsitektur TI",en:"IT architecture",cat:"Process"},
+{jp:"システム拡張性",romaji:"shisutemu kakuchousei",id:"skalabilitas sistem",en:"system scalability",cat:"Process"},
+
+/* ===== Global Quality & Governance ===== */
+{jp:"グローバル品質管理",romaji:"guroobaru hinshitsu kanri",id:"manajemen kualitas global",en:"global quality management",cat:"Inspection"},
+{jp:"品質統制",romaji:"hinshitsu tousei",id:"pengendalian mutu terpusat",en:"quality governance",cat:"Inspection"},
+{jp:"品質戦略",romaji:"hinshitsu senryaku",id:"strategi kualitas",en:"quality strategy",cat:"Inspection"},
+{jp:"グローバルKPI",romaji:"guroobaru KPI",id:"indikator kinerja global",en:"global KPI",cat:"Inspection"},
+{jp:"品質ベンチマーク",romaji:"hinshitsu benchimaaku",id:"pembandingan mutu",en:"quality benchmark",cat:"Inspection"},
+{jp:"継続的改善文化",romaji:"keizokuteki kaizen bunka",id:"budaya perbaikan berkelanjutan",en:"continuous improvement culture",cat:"Inspection"},
+{jp:"企業成熟度",romaji:"kigyou seijukudo",id:"tingkat kematangan organisasi",en:"organizational maturity",cat:"Inspection"},
+{jp:"品質ロードマップ",romaji:"hinshitsu roodomaappu",id:"peta jalan kualitas",en:"quality roadmap",cat:"Inspection"},
+
+/* ===== Risk / Resilience ===== */
+{jp:"供給網レジリエンス",romaji:"kyoukyuu mou rejiriensu",id:"ketahanan rantai pasok",en:"supply chain resilience",cat:"Process"},
+{jp:"事業継続戦略",romaji:"jigyou keizoku senryaku",id:"strategi keberlanjutan bisnis",en:"business continuity strategy",cat:"Process"},
+{jp:"リスク分散",romaji:"risuku bunsan",id:"diversifikasi risiko",en:"risk diversification",cat:"Process"},
+{jp:"危機管理体制",romaji:"kiki kanri taisei",id:"sistem manajemen krisis",en:"crisis management framework",cat:"Process"},
+{jp:"回復計画",romaji:"kaifuku keikaku",id:"rencana pemulihan",en:"recovery plan",cat:"Process"},
+{jp:"冗長化設計",romaji:"joujouka sekkei",id:"desain redundansi",en:"redundancy design",cat:"Process"},
+{jp:"代替供給源",romaji:"daitai kyoukyuu gen",id:"sumber pasokan alternatif",en:"alternative supplier",cat:"Process"},
+{jp:"安定操業",romaji:"antei sougyou",id:"operasi stabil",en:"stable operation",cat:"Process"}
  
+  
+   
 ];
