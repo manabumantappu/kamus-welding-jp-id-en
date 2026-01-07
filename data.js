@@ -888,6 +888,320 @@ const data = [
 {jp:"作業実施管理",romaji:"sagyou jisshi kanri",id:"manajemen pelaksanaan kerja",en:"work execution management",cat:"Process"},
 {jp:"工程レビュー",romaji:"koutei rebyuu",id:"tinjauan proses",en:"process review",cat:"Process"},
 {jp:"工程改善記録",romaji:"koutei kaizen kiroku",id:"catatan perbaikan proses",en:"process improvement record",cat:"Process"},
-{jp:"作業最終確認",romaji:"sagyou saishuu kakunin",id:"konfirmasi akhir pekerjaan",en:"final work confirmation",cat:"Process"}
+{jp:"作業最終確認",romaji:"sagyou saishuu kakunin",id:"konfirmasi akhir pekerjaan",en:"final work confirmation",cat:"Process"},
+
+/* =================================================
+   ADVANCED INDUSTRIAL VOCAB – BATCH 1 (100)
+================================================= */
+
+/* ===== Welding (Advanced) ===== */
+{jp:"溶接施工要領書",romaji:"yousetsu sekou youryou sho",id:"dokumen prosedur pengelasan",en:"welding procedure specification",cat:"Welding"},
+{jp:"溶接条件管理表",romaji:"yousetsu jouken kanrihyou",id:"tabel kontrol kondisi las",en:"welding condition control sheet",cat:"Welding"},
+{jp:"溶接資格認証",romaji:"yousetsu shikaku ninshou",id:"sertifikasi pengelasan",en:"welding qualification certification",cat:"Welding"},
+{jp:"溶接技能認定",romaji:"yousetsu ginou nintei",id:"pengakuan keterampilan las",en:"welding skill qualification",cat:"Welding"},
+{jp:"溶接歪み対策",romaji:"yousetsu yugami taisaku",id:"pencegahan distorsi las",en:"welding distortion control",cat:"Welding"},
+{jp:"溶接入熱管理",romaji:"yousetsu nyuunetsu kanri",id:"kontrol masukan panas las",en:"welding heat input control",cat:"Welding"},
+{jp:"溶接記号指示",romaji:"yousetsu kigou shiji",id:"instruksi simbol las",en:"welding symbol instruction",cat:"Welding"},
+{jp:"溶接欠陥判定",romaji:"yousetsu kekkan hantei",id:"penilaian cacat las",en:"weld defect judgement",cat:"Welding"},
+{jp:"溶接補修基準",romaji:"yousetsu hoshuu kijun",id:"standar perbaikan las",en:"weld repair criteria",cat:"Welding"},
+{jp:"溶接最終検査",romaji:"yousetsu saishuu kensa",id:"inspeksi akhir las",en:"final weld inspection",cat:"Welding"},
+
+/* ===== Drawing / Symbol ===== */
+{jp:"組立図",romaji:"kumitate zu",id:"gambar perakitan",en:"assembly drawing",cat:"Process"},
+{jp:"部品図",romaji:"buhin zu",id:"gambar komponen",en:"part drawing",cat:"Process"},
+{jp:"断面図",romaji:"danmen zu",id:"gambar potongan",en:"sectional view",cat:"Process"},
+{jp:"公差指示",romaji:"kousa shiji",id:"instruksi toleransi",en:"tolerance indication",cat:"Process"},
+{jp:"幾何公差",romaji:"kika kousa",id:"toleransi geometrik",en:"geometric tolerance",cat:"Process"},
+{jp:"表面粗さ",romaji:"hyoumen arasa",id:"kekasaran permukaan",en:"surface roughness",cat:"Process"},
+{jp:"溶接指示記号",romaji:"yousetsu shiji kigou",id:"simbol instruksi las",en:"welding instruction symbol",cat:"Process"},
+{jp:"改訂履歴",romaji:"kaitei rireki",id:"riwayat revisi",en:"revision history",cat:"Process"},
+
+/* ===== QC / ISO / JIS ===== */
+{jp:"品質保証",romaji:"hinshitsu hoshou",id:"jaminan mutu",en:"quality assurance",cat:"Inspection"},
+{jp:"品質保証体制",romaji:"hinshitsu hoshou taisei",id:"sistem jaminan mutu",en:"quality assurance system",cat:"Inspection"},
+{jp:"内部監査",romaji:"naibu kansa",id:"audit internal",en:"internal audit",cat:"Inspection"},
+{jp:"是正処置",romaji:"zeisei shochi",id:"tindakan korektif",en:"corrective action",cat:"Inspection"},
+{jp:"予防処置",romaji:"yobou shochi",id:"tindakan pencegahan",en:"preventive action",cat:"Inspection"},
+{jp:"不適合報告",romaji:"futekigou houkoku",id:"laporan ketidaksesuaian",en:"nonconformity report",cat:"Inspection"},
+{jp:"管理基準",romaji:"kanri kijun",id:"standar pengendalian",en:"control standard",cat:"Inspection"},
+{jp:"検査証明書",romaji:"kensa shoumeisho",id:"sertifikat inspeksi",en:"inspection certificate",cat:"Inspection"},
+{jp:"品質目標",romaji:"hinshitsu mokuhyou",id:"target kualitas",en:"quality objective",cat:"Inspection"},
+{jp:"工程監査",romaji:"koutei kansa",id:"audit proses",en:"process audit",cat:"Inspection"},
+
+/* ===== Maintenance / Troubleshooting ===== */
+{jp:"予防保全",romaji:"yobou hozen",id:"perawatan pencegahan",en:"preventive maintenance",cat:"Equipment"},
+{jp:"定期保全",romaji:"teiki hozen",id:"perawatan berkala",en:"periodic maintenance",cat:"Equipment"},
+{jp:"突発故障",romaji:"toppatsu koshou",id:"kerusakan mendadak",en:"sudden failure",cat:"Equipment"},
+{jp:"故障原因分析",romaji:"koshou genin bunseki",id:"analisis penyebab kerusakan",en:"failure cause analysis",cat:"Equipment"},
+{jp:"復旧作業",romaji:"fukkyuu sagyou",id:"pekerjaan pemulihan",en:"recovery work",cat:"Equipment"},
+{jp:"稼働率改善",romaji:"kadouritsu kaizen",id:"peningkatan utilisasi mesin",en:"equipment utilization improvement",cat:"Equipment"},
+{jp:"点検周期",romaji:"tenken shuuki",id:"interval pemeriksaan",en:"inspection interval",cat:"Equipment"},
+{jp:"保全計画",romaji:"hozen keikaku",id:"rencana perawatan",en:"maintenance plan",cat:"Equipment"},
+
+/* ===== Safety / SOP / Audit ===== */
+{jp:"作業標準書",romaji:"sagyou hyoujunsho",id:"dokumen standar kerja",en:"standard operating procedure",cat:"Safety"},
+{jp:"危険予知活動",romaji:"kiken yochi katsudou",id:"kegiatan prediksi bahaya",en:"hazard prediction activity",cat:"Safety"},
+{jp:"リスク評価",romaji:"risuku hyouka",id:"penilaian risiko",en:"risk assessment",cat:"Safety"},
+{jp:"安全監査",romaji:"anzen kansa",id:"audit keselamatan",en:"safety audit",cat:"Safety"},
+{jp:"是正要求",romaji:"zeisei youkyuu",id:"permintaan perbaikan",en:"corrective request",cat:"Safety"},
+{jp:"安全管理責任者",romaji:"anzen kanri sekininsha",id:"penanggung jawab keselamatan",en:"safety manager",cat:"Safety"},
+
+/* ===== Production / Improvement ===== */
+{jp:"量産体制",romaji:"ryousan taisei",id:"sistem produksi massal",en:"mass production system",cat:"Process"},
+{jp:"生産計画",romaji:"seisan keikaku",id:"rencana produksi",en:"production planning",cat:"Process"},
+{jp:"工程能力",romaji:"koutei nouryoku",id:"kapabilitas proses",en:"process capability",cat:"Process"},
+{jp:"標準化",romaji:"hyoujunka",id:"standarisasi",en:"standardization",cat:"Process"},
+{jp:"改善提案",romaji:"kaizen teian",id:"usulan perbaikan",en:"improvement proposal",cat:"Process"},
+{jp:"継続的改善",romaji:"keizokuteki kaizen",id:"perbaikan berkelanjutan",en:"continuous improvement",cat:"Process"},
+   
+/* =================================================
+   ADVANCED INDUSTRIAL VOCAB – BATCH 2 (100)
+================================================= */
+
+/* ===== Welding (Advanced) ===== */
+{jp:"溶接施工計画",romaji:"yousetsu sekou keikaku",id:"rencana pelaksanaan pengelasan",en:"welding execution plan",cat:"Welding"},
+{jp:"溶接条件承認",romaji:"yousetsu jouken shounin",id:"persetujuan kondisi las",en:"welding condition approval",cat:"Welding"},
+{jp:"溶接条件検証",romaji:"yousetsu jouken kenshou",id:"verifikasi kondisi las",en:"welding condition verification",cat:"Welding"},
+{jp:"溶接部評価",romaji:"yousetsu bu hyouka",id:"evaluasi bagian las",en:"weld area evaluation",cat:"Welding"},
+{jp:"溶接品質保証",romaji:"yousetsu hinshitsu hoshou",id:"jaminan mutu pengelasan",en:"welding quality assurance",cat:"Welding"},
+{jp:"溶接補修手順",romaji:"yousetsu hoshuu tejun",id:"prosedur perbaikan las",en:"weld repair procedure",cat:"Welding"},
+{jp:"溶接再施工",romaji:"yousetsu saisekou",id:"pengelasan ulang",en:"re-welding execution",cat:"Welding"},
+{jp:"溶接施工記録管理",romaji:"yousetsu sekou kiroku kanri",id:"manajemen catatan pengelasan",en:"welding execution record control",cat:"Welding"},
+{jp:"溶接技能維持",romaji:"yousetsu ginou iji",id:"pemeliharaan skill las",en:"welding skill maintenance",cat:"Welding"},
+{jp:"溶接作業適合性",romaji:"yousetsu sagyou tekigousei",id:"kesesuaian kerja las",en:"welding work conformity",cat:"Welding"},
+
+/* ===== Drawing / Symbol (Advanced) ===== */
+{jp:"寸法公差表",romaji:"sunpou kousa hyou",id:"tabel toleransi dimensi",en:"dimensional tolerance table",cat:"Process"},
+{jp:"基準面",romaji:"kijun men",id:"bidang acuan",en:"datum surface",cat:"Process"},
+{jp:"基準線",romaji:"kijun sen",id:"garis acuan",en:"datum line",cat:"Process"},
+{jp:"投影法",romaji:"touei hou",id:"metode proyeksi gambar",en:"projection method",cat:"Process"},
+{jp:"縮尺",romaji:"shukusha",id:"skala gambar",en:"drawing scale",cat:"Process"},
+{jp:"図面番号",romaji:"zumen bangou",id:"nomor gambar",en:"drawing number",cat:"Process"},
+{jp:"承認印",romaji:"shounin in",id:"stempel persetujuan",en:"approval stamp",cat:"Process"},
+{jp:"改訂番号",romaji:"kaitei bangou",id:"nomor revisi",en:"revision number",cat:"Process"},
+
+/* ===== QC / ISO / JIS (Advanced) ===== */
+{jp:"品質マニュアル",romaji:"hinshitsu manyuaru",id:"manual mutu",en:"quality manual",cat:"Inspection"},
+{jp:"文書管理",romaji:"bunsho kanri",id:"pengendalian dokumen",en:"document control",cat:"Inspection"},
+{jp:"記録管理",romaji:"kiroku kanri",id:"pengendalian rekaman",en:"record control",cat:"Inspection"},
+{jp:"是正予防処置",romaji:"zeisei yobou shochi",id:"tindakan korektif & pencegahan",en:"corrective and preventive action",cat:"Inspection"},
+{jp:"品質監査計画",romaji:"hinshitsu kansa keikaku",id:"rencana audit mutu",en:"quality audit plan",cat:"Inspection"},
+{jp:"監査指摘事項",romaji:"kansa shiteki jikou",id:"temuan audit",en:"audit finding",cat:"Inspection"},
+{jp:"是正完了確認",romaji:"zeisei kanryou kakunin",id:"verifikasi penyelesaian koreksi",en:"corrective completion verification",cat:"Inspection"},
+{jp:"品質データ分析",romaji:"hinshitsu deeta bunseki",id:"analisis data kualitas",en:"quality data analysis",cat:"Inspection"},
+{jp:"管理図",romaji:"kanrizu",id:"peta kendali",en:"control chart",cat:"Inspection"},
+{jp:"工程能力指数",romaji:"koutei nouryoku shisuu",id:"indeks kapabilitas proses",en:"process capability index",cat:"Inspection"},
+
+/* ===== Maintenance / Troubleshooting (Advanced) ===== */
+{jp:"予知保全",romaji:"yochi hozen",id:"perawatan prediktif",en:"predictive maintenance",cat:"Equipment"},
+{jp:"保全履歴",romaji:"hozen rireki",id:"riwayat perawatan",en:"maintenance history",cat:"Equipment"},
+{jp:"異常検知",romaji:"ijou kenchi",id:"deteksi abnormal",en:"abnormality detection",cat:"Equipment"},
+{jp:"振動分析",romaji:"shindou bunseki",id:"analisis getaran",en:"vibration analysis",cat:"Equipment"},
+{jp:"故障モード",romaji:"koshou moodo",id:"mode kegagalan",en:"failure mode",cat:"Equipment"},
+{jp:"保全標準",romaji:"hozen hyoujun",id:"standar perawatan",en:"maintenance standard",cat:"Equipment"},
+{jp:"修理完了報告",romaji:"shuuri kanryou houkoku",id:"laporan selesai perbaikan",en:"repair completion report",cat:"Equipment"},
+{jp:"設備信頼性",romaji:"setsubi shinraisei",id:"keandalan mesin",en:"equipment reliability",cat:"Equipment"},
+
+/* ===== Safety / SOP / Audit (Advanced) ===== */
+{jp:"安全作業手順",romaji:"anzen sagyou tejun",id:"prosedur kerja aman",en:"safe work procedure",cat:"Safety"},
+{jp:"危険源特定",romaji:"kiken gen tokutei",id:"identifikasi sumber bahaya",en:"hazard identification",cat:"Safety"},
+{jp:"リスク低減措置",romaji:"risuku teigen sochi",id:"langkah pengurangan risiko",en:"risk reduction measure",cat:"Safety"},
+{jp:"安全点検記録",romaji:"anzen tenken kiroku",id:"catatan inspeksi keselamatan",en:"safety inspection record",cat:"Safety"},
+{jp:"安全監査計画",romaji:"anzen kansa keikaku",id:"rencana audit keselamatan",en:"safety audit plan",cat:"Safety"},
+{jp:"是正措置報告",romaji:"zeisei sochi houkoku",id:"laporan tindakan korektif",en:"corrective action report",cat:"Safety"},
+{jp:"安全教育実施",romaji:"anzen kyouiku jisshi",id:"pelaksanaan pelatihan keselamatan",en:"safety training implementation",cat:"Safety"},
+
+/* ===== Production / Improvement (Advanced) ===== */
+{jp:"生産性向上",romaji:"seisansei koujou",id:"peningkatan produktivitas",en:"productivity improvement",cat:"Process"},
+{jp:"ラインバランス",romaji:"rain baransu",id:"keseimbangan lini",en:"line balancing",cat:"Process"},
+{jp:"標準作業票",romaji:"hyoujun sagyou hyou",id:"lembar kerja standar",en:"standard work sheet",cat:"Process"},
+{jp:"工程改善計画",romaji:"koutei kaizen keikaku",id:"rencana perbaikan proses",en:"process improvement plan",cat:"Process"},
+{jp:"作業分析",romaji:"sagyou bunseki",id:"analisis kerja",en:"work analysis",cat:"Process"},
+{jp:"生産実績管理",romaji:"seisan jisseki kanri",id:"manajemen realisasi produksi",en:"production performance control",cat:"Process"},
+{jp:"標準時間設定",romaji:"hyoujun jikan settei",id:"penetapan waktu standar",en:"standard time setting",cat:"Process"},
+{jp:"改善効果測定",romaji:"kaizen kouka sokutei",id:"pengukuran hasil perbaikan",en:"improvement effect measurement",cat:"Process"},
+
+ /* =================================================
+   ADVANCED INDUSTRIAL VOCAB – BATCH 3 (100)
+================================================= */
+
+/* ===== Root Cause / Problem Solving ===== */
+{jp:"根本原因分析",romaji:"konpon genin bunseki",id:"analisis akar penyebab",en:"root cause analysis",cat:"Inspection"},
+{jp:"なぜなぜ分析",romaji:"naze naze bunseki",id:"analisis 5 mengapa",en:"5 why analysis",cat:"Inspection"},
+{jp:"特性要因図",romaji:"tokusei youin zu",id:"diagram sebab-akibat",en:"fishbone diagram",cat:"Inspection"},
+{jp:"問題定義",romaji:"mondai teigi",id:"pendefinisian masalah",en:"problem definition",cat:"Inspection"},
+{jp:"暫定対策",romaji:"zantei taisaku",id:"tindakan sementara",en:"temporary countermeasure",cat:"Inspection"},
+{jp:"恒久対策",romaji:"koukyuu taisaku",id:"tindakan permanen",en:"permanent countermeasure",cat:"Inspection"},
+{jp:"再発防止策",romaji:"saihatsu boushi saku",id:"langkah pencegahan ulang",en:"recurrence prevention",cat:"Inspection"},
+{jp:"効果確認",romaji:"kouka kakunin",id:"verifikasi efektivitas",en:"effectiveness verification",cat:"Inspection"},
+
+/* ===== FMEA / Risk ===== */
+{jp:"故障モード影響解析",romaji:"koshou moodo eikyou kaiseki",id:"analisis dampak mode kegagalan",en:"failure mode and effects analysis",cat:"Inspection"},
+{jp:"リスク優先数",romaji:"risuku yuusen suu",id:"angka prioritas risiko",en:"risk priority number",cat:"Inspection"},
+{jp:"重大度",romaji:"juudodo",id:"tingkat keparahan",en:"severity",cat:"Inspection"},
+{jp:"発生頻度",romaji:"hassei hindo",id:"frekuensi kejadian",en:"occurrence",cat:"Inspection"},
+{jp:"検出度",romaji:"kenshutsudo",id:"tingkat deteksi",en:"detection",cat:"Inspection"},
+{jp:"リスク評価表",romaji:"risuku hyouka hyou",id:"tabel evaluasi risiko",en:"risk assessment table",cat:"Inspection"},
+{jp:"リスク低減計画",romaji:"risuku teigen keikaku",id:"rencana pengurangan risiko",en:"risk mitigation plan",cat:"Inspection"},
+{jp:"残留リスク",romaji:"zanryuu risuku",id:"risiko tersisa",en:"residual risk",cat:"Inspection"},
+
+/* ===== Control Plan / SPC ===== */
+{jp:"管理計画書",romaji:"kanri keikakusho",id:"dokumen rencana pengendalian",en:"control plan",cat:"Inspection"},
+{jp:"管理特性",romaji:"kanri tokusei",id:"karakteristik kendali",en:"control characteristic",cat:"Inspection"},
+{jp:"測定頻度",romaji:"sokutei hindo",id:"frekuensi pengukuran",en:"measurement frequency",cat:"Inspection"},
+{jp:"異常判定基準",romaji:"ijou hantei kijun",id:"kriteria penilaian abnormal",en:"abnormal judgement criteria",cat:"Inspection"},
+{jp:"統計的工程管理",romaji:"toukeiteki koutei kanri",id:"pengendalian proses statistik",en:"statistical process control",cat:"Inspection"},
+{jp:"管理限界",romaji:"kanri genkai",id:"batas kendali",en:"control limit",cat:"Inspection"},
+{jp:"中心線",romaji:"chuushin sen",id:"garis tengah",en:"center line",cat:"Inspection"},
+{jp:"傾向管理",romaji:"keikou kanri",id:"manajemen tren",en:"trend control",cat:"Inspection"},
+
+/* ===== TPM / Maintenance ===== */
+{jp:"全員参加保全",romaji:"zen-in sanka hozen",id:"perawatan total partisipatif",en:"total productive maintenance",cat:"Equipment"},
+{jp:"自主保全",romaji:"jishu hozen",id:"perawatan mandiri",en:"autonomous maintenance",cat:"Equipment"},
+{jp:"計画保全",romaji:"keikaku hozen",id:"perawatan terencana",en:"planned maintenance",cat:"Equipment"},
+{jp:"初期管理",romaji:"shoki kanri",id:"manajemen tahap awal",en:"early equipment management",cat:"Equipment"},
+{jp:"設備総合効率",romaji:"setsubi sougou kouritsu",id:"efektivitas total peralatan",en:"overall equipment effectiveness",cat:"Equipment"},
+{jp:"停止ロス",romaji:"teishi rosu",id:"kerugian karena berhenti",en:"downtime loss",cat:"Equipment"},
+{jp:"速度ロス",romaji:"sokudo rosu",id:"kerugian kecepatan",en:"speed loss",cat:"Equipment"},
+{jp:"不良ロス",romaji:"furyou rosu",id:"kerugian akibat cacat",en:"defect loss",cat:"Equipment"},
+
+/* ===== Safety / Risk Assessment ===== */
+{jp:"危険源評価",romaji:"kiken gen hyouka",id:"evaluasi sumber bahaya",en:"hazard evaluation",cat:"Safety"},
+{jp:"作業リスク評価",romaji:"sagyou risuku hyouka",id:"penilaian risiko kerja",en:"work risk assessment",cat:"Safety"},
+{jp:"リスクマトリクス",romaji:"risuku matorikusu",id:"matriks risiko",en:"risk matrix",cat:"Safety"},
+{jp:"安全対策立案",romaji:"anzen taisaku ritsuan",id:"perencanaan tindakan keselamatan",en:"safety countermeasure planning",cat:"Safety"},
+{jp:"安全是正処置",romaji:"anzen zeisei shochi",id:"tindakan korektif keselamatan",en:"safety corrective action",cat:"Safety"},
+{jp:"安全レビュー",romaji:"anzen rebyuu",id:"tinjauan keselamatan",en:"safety review",cat:"Safety"},
+{jp:"作業許可制度",romaji:"sagyou kyoka seido",id:"sistem izin kerja",en:"work permit system",cat:"Safety"},
+
+/* ===== Production / Improvement ===== */
+{jp:"工程最適化",romaji:"koutei saiteki ka",id:"optimasi proses",en:"process optimization",cat:"Process"},
+{jp:"ムダ排除",romaji:"muda haijo",id:"eliminasi pemborosan",en:"waste elimination",cat:"Process"},
+{jp:"ボトルネック",romaji:"botorunekku",id:"titik hambatan",en:"bottleneck",cat:"Process"},
+{jp:"タクトタイム",romaji:"takuto taimu",id:"waktu siklus target",en:"takt time",cat:"Process"},
+{jp:"工程設計",romaji:"koutei sekkei",id:"perancangan proses",en:"process design",cat:"Process"},
+{jp:"生産能力計画",romaji:"seisan nouryoku keikaku",id:"perencanaan kapasitas produksi",en:"production capacity planning",cat:"Process"},
+{jp:"改善ロードマップ",romaji:"kaizen roodomaappu",id:"peta jalan perbaikan",en:"improvement roadmap",cat:"Process"},
+{jp:"成果指標",romaji:"seika shihyou",id:"indikator kinerja",en:"performance indicator",cat:"Process"},
   
+/* =================================================
+   ADVANCED INDUSTRIAL VOCAB – BATCH 4 (100)
+================================================= */
+
+/* ===== APQP / Planning ===== */
+{jp:"先行製品品質計画",romaji:"senkou seihin hinshitsu keikaku",id:"perencanaan kualitas produk awal",en:"advanced product quality planning",cat:"Inspection"},
+{jp:"品質計画書",romaji:"hinshitsu keikakusho",id:"dokumen perencanaan mutu",en:"quality planning document",cat:"Inspection"},
+{jp:"製品要求事項",romaji:"seihin youkyuu jikou",id:"persyaratan produk",en:"product requirement",cat:"Inspection"},
+{jp:"工程フロー図",romaji:"koutei furo-zu",id:"diagram alur proses",en:"process flow diagram",cat:"Process"},
+{jp:"設計検証",romaji:"sekkei kenshou",id:"verifikasi desain",en:"design verification",cat:"Inspection"},
+{jp:"設計妥当性確認",romaji:"sekkei datousei kakunin",id:"validasi desain",en:"design validation",cat:"Inspection"},
+{jp:"量産準備",romaji:"ryousan junbi",id:"persiapan produksi massal",en:"mass production preparation",cat:"Process"},
+{jp:"品質目標設定",romaji:"hinshitsu mokuhyou settei",id:"penetapan target mutu",en:"quality objective setting",cat:"Inspection"},
+
+/* ===== PPAP ===== */
+{jp:"生産部品承認プロセス",romaji:"seisan buhin shounin purosesu",id:"proses persetujuan part produksi",en:"production part approval process",cat:"Inspection"},
+{jp:"初期サンプル",romaji:"shoki sanpuru",id:"sampel awal",en:"initial sample",cat:"Inspection"},
+{jp:"外観承認",romaji:"gaikan shounin",id:"persetujuan tampilan",en:"appearance approval",cat:"Inspection"},
+{jp:"寸法測定結果",romaji:"sunpou sokutei kekka",id:"hasil ukur dimensi",en:"dimensional measurement result",cat:"Inspection"},
+{jp:"材料試験成績",romaji:"zairyou shiken seiseki",id:"hasil uji material",en:"material test result",cat:"Inspection"},
+{jp:"工程能力証明",romaji:"koutei nouryoku shoumei",id:"bukti kapabilitas proses",en:"process capability evidence",cat:"Inspection"},
+{jp:"初回生産承認",romaji:"shokai seisan shounin",id:"persetujuan produksi awal",en:"initial production approval",cat:"Inspection"},
+
+/* ===== MSA / Gauge R&R ===== */
+{jp:"測定システム解析",romaji:"sokutei shisutemu kaiseki",id:"analisis sistem pengukuran",en:"measurement system analysis",cat:"Inspection"},
+{jp:"ゲージ再現性",romaji:"geeji saigensei",id:"reprodusibilitas alat ukur",en:"gauge reproducibility",cat:"Inspection"},
+{jp:"ゲージ反復性",romaji:"geeji hanpukusei",id:"repeatabilitas alat ukur",en:"gauge repeatability",cat:"Inspection"},
+{jp:"測定ばらつき",romaji:"sokutei baratsuki",id:"variasi pengukuran",en:"measurement variation",cat:"Inspection"},
+{jp:"測定誤差要因",romaji:"sokutei gosa youin",id:"faktor kesalahan ukur",en:"measurement error factor",cat:"Inspection"},
+{jp:"測定信頼性",romaji:"sokutei shinraisei",id:"keandalan pengukuran",en:"measurement reliability",cat:"Inspection"},
+{jp:"測定基準適合",romaji:"sokutei kijun tekigou",id:"kesesuaian standar ukur",en:"measurement standard conformity",cat:"Inspection"},
+
+/* ===== ISO / JIS Advanced ===== */
+{jp:"国際規格",romaji:"kokusai kikaku",id:"standar internasional",en:"international standard",cat:"Inspection"},
+{jp:"日本工業規格",romaji:"nihon kougyou kikaku",id:"standar industri Jepang",en:"japanese industrial standard",cat:"Inspection"},
+{jp:"規格要求事項",romaji:"kikaku youkyuu jikou",id:"persyaratan standar",en:"standard requirement",cat:"Inspection"},
+{jp:"規格適合証明",romaji:"kikaku tekigou shoumei",id:"sertifikat kesesuaian standar",en:"certificate of conformity",cat:"Inspection"},
+{jp:"監査チェックリスト",romaji:"kansa chekku risuto",id:"daftar periksa audit",en:"audit checklist",cat:"Inspection"},
+{jp:"是正期限",romaji:"zeisei kigen",id:"batas waktu perbaikan",en:"corrective action deadline",cat:"Inspection"},
+{jp:"規格改訂対応",romaji:"kikaku kaitei taiou",id:"penyesuaian revisi standar",en:"standard revision 대응",cat:"Inspection"},
+
+/* ===== Equipment / Calibration ===== */
+{jp:"校正証明書",romaji:"kousei shoumeisho",id:"sertifikat kalibrasi",en:"calibration certificate",cat:"Equipment"},
+{jp:"校正周期管理",romaji:"kousei shuuki kanri",id:"manajemen interval kalibrasi",en:"calibration interval control",cat:"Equipment"},
+{jp:"校正期限切れ",romaji:"kousei kigen gire",id:"kalibrasi kedaluwarsa",en:"calibration expired",cat:"Equipment"},
+{jp:"測定機器管理",romaji:"sokutei kiki kanri",id:"manajemen alat ukur",en:"measuring equipment management",cat:"Equipment"},
+{jp:"校正不適合",romaji:"kousei futekigou",id:"ketidaksesuaian kalibrasi",en:"calibration nonconformity",cat:"Equipment"},
+{jp:"基準器",romaji:"kijunki",id:"alat ukur standar",en:"reference standard",cat:"Equipment"},
+
+/* ===== Production / System ===== */
+{jp:"品質マネジメントシステム",romaji:"hinshitsu manejimento shisutemu",id:"sistem manajemen mutu",en:"quality management system",cat:"Process"},
+{jp:"トレーサビリティ管理",romaji:"toreesabiriti kanri",id:"manajemen ketertelusuran",en:"traceability management",cat:"Process"},
+{jp:"変更管理",romaji:"henkou kanri",id:"manajemen perubahan",en:"change management",cat:"Process"},
+{jp:"承認フロー",romaji:"shounin furo-",id:"alur persetujuan",en:"approval flow",cat:"Process"},
+{jp:"品質データ管理",romaji:"hinshitsu deeta kanri",id:"pengelolaan data mutu",en:"quality data management",cat:"Process"},
+{jp:"継続改善活動",romaji:"keizoku kaizen katsudou",id:"aktivitas perbaikan berkelanjutan",en:"continuous improvement activity",cat:"Process"},
+   
+ /* =================================================
+   ADVANCED INDUSTRIAL VOCAB – BATCH 5 (100)
+================================================= */
+
+/* ===== Lean Manufacturing ===== */
+{jp:"リーン生産方式",romaji:"riin seisan houshiki",id:"sistem produksi lean",en:"lean manufacturing",cat:"Process"},
+{jp:"ジャストインタイム",romaji:"jasuto in taimu",id:"produksi tepat waktu",en:"just in time",cat:"Process"},
+{jp:"かんばん方式",romaji:"kanban houshiki",id:"sistem kanban",en:"kanban system",cat:"Process"},
+{jp:"平準化",romaji:"heijunka",id:"perataan produksi",en:"production leveling",cat:"Process"},
+{jp:"ムダ",romaji:"muda",id:"pemborosan",en:"waste",cat:"Process"},
+{jp:"ムラ",romaji:"mura",id:"ketidakteraturan",en:"unevenness",cat:"Process"},
+{jp:"ムリ",romaji:"muri",id:"beban berlebih",en:"overburden",cat:"Process"},
+{jp:"価値流れ図",romaji:"kachi nagare zu",id:"peta aliran nilai",en:"value stream mapping",cat:"Process"},
+{jp:"セル生産",romaji:"seru seisan",id:"produksi sel",en:"cell production",cat:"Process"},
+{jp:"標準在庫",romaji:"hyoujun zaiko",id:"stok standar",en:"standard inventory",cat:"Process"},
+
+/* ===== Six Sigma ===== */
+{jp:"シックスシグマ",romaji:"shikkusu shiguma",id:"six sigma",en:"six sigma",cat:"Inspection"},
+{jp:"DMAIC",romaji:"demaikku",id:"tahapan DMAIC",en:"DMAIC methodology",cat:"Inspection"},
+{jp:"ばらつき低減",romaji:"baratsuki teigen",id:"pengurangan variasi",en:"variation reduction",cat:"Inspection"},
+{jp:"工程ばらつき",romaji:"koutei baratsuki",id:"variasi proses",en:"process variation",cat:"Inspection"},
+{jp:"σ水準",romaji:"shiguma suijun",id:"tingkat sigma",en:"sigma level",cat:"Inspection"},
+{jp:"不良率",romaji:"furyouritsu",id:"tingkat cacat",en:"defect rate",cat:"Inspection"},
+{jp:"改善プロジェクト",romaji:"kaizen purojekuto",id:"proyek perbaikan",en:"improvement project",cat:"Inspection"},
+{jp:"品質特性",romaji:"hinshitsu tokusei",id:"karakteristik kualitas",en:"quality characteristic",cat:"Inspection"},
+
+/* ===== DOE / Statistik ===== */
+{jp:"実験計画法",romaji:"jikken keikakuhou",id:"metode perancangan eksperimen",en:"design of experiments",cat:"Inspection"},
+{jp:"要因",romaji:"youin",id:"faktor",en:"factor",cat:"Inspection"},
+{jp:"水準",romaji:"suijun",id:"level",en:"level",cat:"Inspection"},
+{jp:"交互作用",romaji:"kougo sayou",id:"interaksi faktor",en:"interaction effect",cat:"Inspection"},
+{jp:"応答",romaji:"outou",id:"respon",en:"response",cat:"Inspection"},
+{jp:"分散分析",romaji:"bunsan bunseki",id:"analisis varians",en:"analysis of variance",cat:"Inspection"},
+{jp:"回帰分析",romaji:"kaiki bunseki",id:"analisis regresi",en:"regression analysis",cat:"Inspection"},
+{jp:"信頼区間",romaji:"shinrai kukan",id:"rentang kepercayaan",en:"confidence interval",cat:"Inspection"},
+
+/* ===== Statistical Quality ===== */
+{jp:"標準偏差",romaji:"hyoujun hensha",id:"simpangan baku",en:"standard deviation",cat:"Inspection"},
+{jp:"平均値",romaji:"heikin chi",id:"nilai rata-rata",en:"mean value",cat:"Inspection"},
+{jp:"中央値",romaji:"chuuchi",id:"nilai tengah",en:"median",cat:"Inspection"},
+{jp:"分布",romaji:"bunpu",id:"distribusi",en:"distribution",cat:"Inspection"},
+{jp:"正規分布",romaji:"seiki bunpu",id:"distribusi normal",en:"normal distribution",cat:"Inspection"},
+{jp:"工程能力分析",romaji:"koutei nouryoku bunseki",id:"analisis kapabilitas proses",en:"process capability analysis",cat:"Inspection"},
+{jp:"工程能力比",romaji:"koutei nouryoku hi",id:"rasio kapabilitas proses",en:"process capability ratio",cat:"Inspection"},
+
+/* ===== Production & Improvement ===== */
+{jp:"サイクルタイム",romaji:"saikuru taimu",id:"waktu siklus",en:"cycle time",cat:"Process"},
+{jp:"リードタイム",romaji:"riido taimu",id:"waktu tunggu produksi",en:"lead time",cat:"Process"},
+{jp:"生産ロス",romaji:"seisan rosu",id:"kerugian produksi",en:"production loss",cat:"Process"},
+{jp:"稼働分析",romaji:"kadou bunseki",id:"analisis operasional",en:"operation analysis",cat:"Process"},
+{jp:"負荷分析",romaji:"fuka bunseki",id:"analisis beban kerja",en:"workload analysis",cat:"Process"},
+{jp:"能力ギャップ",romaji:"nouryoku gyappu",id:"kesenjangan kemampuan",en:"capacity gap",cat:"Process"},
+{jp:"改善テーマ設定",romaji:"kaizen teema settei",id:"penentuan tema perbaikan",en:"improvement theme setting",cat:"Process"},
+{jp:"成果レビュー",romaji:"seika rebyuu",id:"tinjauan hasil",en:"result review",cat:"Process"},
+
+/* ===== Management / KPI ===== */
+{jp:"重要業績評価指標",romaji:"juuyou gyouseki hyouka shihyou",id:"indikator kinerja utama",en:"key performance indicator",cat:"Process"},
+{jp:"目標管理",romaji:"mokuhyou kanri",id:"manajemen target",en:"management by objectives",cat:"Process"},
+{jp:"進捗管理",romaji:"shinchoku kanri",id:"manajemen progres",en:"progress management",cat:"Process"},
+{jp:"成果測定",romaji:"seika sokutei",id:"pengukuran hasil",en:"performance measurement",cat:"Process"},
+{jp:"業務改善",romaji:"gyoumu kaizen",id:"perbaikan operasional",en:"business improvement",cat:"Process"},
+{jp:"管理レビュー",romaji:"kanri rebyuu",id:"tinjauan manajemen",en:"management review",cat:"Process"}
+ 
 ];
